@@ -19,8 +19,6 @@ public class customer implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Email")
 	private java.lang.String email;
 
-	private java.lang.String rte;
-
 	public customer() {
 	}
 
@@ -64,23 +62,13 @@ public class customer implements java.io.Serializable {
 		this.email = email;
 	}
 
-	public java.lang.String getRte() {
-		return this.rte;
-	}
-
-	public void setRte(java.lang.String rte) {
-		this.rte = rte;
-	}
-
 	public customer(java.lang.String customerId, java.lang.String name,
-			java.util.Date dob, java.lang.String phone, java.lang.String email,
-			java.lang.String rte) {
+			java.util.Date dob, java.lang.String phone, java.lang.String email) {
 		this.customerId = customerId;
 		this.name = name;
 		this.dob = dob;
 		this.phone = phone;
 		this.email = email;
-		this.rte = rte;
 	}
 
 }
