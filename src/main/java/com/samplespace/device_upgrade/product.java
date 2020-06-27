@@ -6,12 +6,35 @@ package com.samplespace.device_upgrade;
 
 public class product implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public product() {
-    }
+	@org.kie.api.definition.type.Label(value = "Product Id")
+	private java.lang.String productId;
+	@org.kie.api.definition.type.Label(value = "Product Name")
+	private java.lang.String productName;
 
+	public product() {
+	}
 
+	public java.lang.String getProductId() {
+		return this.productId;
+	}
 
+	public void setProductId(java.lang.String productId) {
+		this.productId = productId;
+	}
+
+	public java.lang.String getProductName() {
+		return this.productName;
+	}
+
+	public void setProductName(java.lang.String productName) {
+		this.productName = productName;
+	}
+
+	public product(java.lang.String productId, java.lang.String productName) {
+		this.productId = productId;
+		this.productName = productName;
+	}
 
 }
