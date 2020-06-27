@@ -8,16 +8,18 @@ public class customer implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Customer Id")
+	@org.kie.api.definition.type.Label("Customer Id")
 	private java.lang.String customerId;
-	@org.kie.api.definition.type.Label(value = "Name")
+	@org.kie.api.definition.type.Label("Name")
 	private java.lang.String name;
-	@org.kie.api.definition.type.Label(value = "Date of Birth")
+	@org.kie.api.definition.type.Label("Date of Birth")
 	private java.util.Date dob;
-	@org.kie.api.definition.type.Label(value = "Phone")
+	@org.kie.api.definition.type.Label("Phone")
 	private java.lang.String phone;
-	@org.kie.api.definition.type.Label(value = "Email")
+	@org.kie.api.definition.type.Label("Email")
 	private java.lang.String email;
+
+	private java.lang.String rte;
 
 	public customer() {
 	}
@@ -62,13 +64,23 @@ public class customer implements java.io.Serializable {
 		this.email = email;
 	}
 
+	public java.lang.String getRte() {
+		return this.rte;
+	}
+
+	public void setRte(java.lang.String rte) {
+		this.rte = rte;
+	}
+
 	public customer(java.lang.String customerId, java.lang.String name,
-			java.util.Date dob, java.lang.String phone, java.lang.String email) {
+			java.util.Date dob, java.lang.String phone, java.lang.String email,
+			java.lang.String rte) {
 		this.customerId = customerId;
 		this.name = name;
 		this.dob = dob;
 		this.phone = phone;
 		this.email = email;
+		this.rte = rte;
 	}
 
 }
