@@ -8,10 +8,13 @@ public class product implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Product Id")
+	@org.kie.api.definition.type.Label("Product Id")
 	private java.lang.String productId;
-	@org.kie.api.definition.type.Label(value = "Product Name")
+	@org.kie.api.definition.type.Label("Product Name")
 	private java.lang.String productName;
+
+	@org.kie.api.definition.type.Label(value = "Product Description")
+	private java.lang.String productDescription;
 
 	public product() {
 	}
@@ -32,9 +35,19 @@ public class product implements java.io.Serializable {
 		this.productName = productName;
 	}
 
-	public product(java.lang.String productId, java.lang.String productName) {
+	public java.lang.String getProductDescription() {
+		return this.productDescription;
+	}
+
+	public void setProductDescription(java.lang.String productDescription) {
+		this.productDescription = productDescription;
+	}
+
+	public product(java.lang.String productId, java.lang.String productName,
+			java.lang.String productDescription) {
 		this.productId = productId;
 		this.productName = productName;
+		this.productDescription = productDescription;
 	}
 
 }
