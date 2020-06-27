@@ -6,12 +6,69 @@ package com.samplespace.device_upgrade;
 
 public class customer implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public customer() {
-    }
+	@org.kie.api.definition.type.Label(value = "Customer Id")
+	private java.lang.String customerId;
+	@org.kie.api.definition.type.Label(value = "Name")
+	private java.lang.String name;
+	@org.kie.api.definition.type.Label(value = "Date of Birth")
+	private java.util.Date dob;
+	@org.kie.api.definition.type.Label(value = "Phone")
+	private java.lang.String phone;
+	@org.kie.api.definition.type.Label(value = "Email")
+	private java.lang.String email;
 
+	public customer() {
+	}
 
+	public java.lang.String getCustomerId() {
+		return this.customerId;
+	}
 
+	public void setCustomerId(java.lang.String customerId) {
+		this.customerId = customerId;
+	}
+
+	public java.lang.String getName() {
+		return this.name;
+	}
+
+	public void setName(java.lang.String name) {
+		this.name = name;
+	}
+
+	public java.util.Date getDob() {
+		return this.dob;
+	}
+
+	public void setDob(java.util.Date dob) {
+		this.dob = dob;
+	}
+
+	public java.lang.String getPhone() {
+		return this.phone;
+	}
+
+	public void setPhone(java.lang.String phone) {
+		this.phone = phone;
+	}
+
+	public java.lang.String getEmail() {
+		return this.email;
+	}
+
+	public void setEmail(java.lang.String email) {
+		this.email = email;
+	}
+
+	public customer(java.lang.String customerId, java.lang.String name,
+			java.util.Date dob, java.lang.String phone, java.lang.String email) {
+		this.customerId = customerId;
+		this.name = name;
+		this.dob = dob;
+		this.phone = phone;
+		this.email = email;
+	}
 
 }
