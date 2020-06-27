@@ -19,14 +19,11 @@ public class customer implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Email")
 	private java.lang.String email;
 
-	@org.kie.api.definition.type.Label("Shipping Address")
-	private com.samplespace.device_upgrade.address shippingAddress;
-
-	@org.kie.api.definition.type.Label("Billing Address")
-	private com.samplespace.device_upgrade.address billingAddress;
-
-	@org.kie.api.definition.type.Label(value = "Products")
+	@org.kie.api.definition.type.Label("Products")
 	private java.util.List<com.samplespace.device_upgrade.product> products;
+
+	@org.kie.api.definition.type.Label(value = "Address")
+	private java.util.List<com.samplespace.device_upgrade.address> address;
 
 	public customer() {
 	}
@@ -71,24 +68,6 @@ public class customer implements java.io.Serializable {
 		this.email = email;
 	}
 
-	public com.samplespace.device_upgrade.address getShippingAddress() {
-		return this.shippingAddress;
-	}
-
-	public void setShippingAddress(
-			com.samplespace.device_upgrade.address shippingAddress) {
-		this.shippingAddress = shippingAddress;
-	}
-
-	public com.samplespace.device_upgrade.address getBillingAddress() {
-		return this.billingAddress;
-	}
-
-	public void setBillingAddress(
-			com.samplespace.device_upgrade.address billingAddress) {
-		this.billingAddress = billingAddress;
-	}
-
 	public java.util.List<com.samplespace.device_upgrade.product> getProducts() {
 		return this.products;
 	}
@@ -98,19 +77,26 @@ public class customer implements java.io.Serializable {
 		this.products = products;
 	}
 
+	public java.util.List<com.samplespace.device_upgrade.address> getAddress() {
+		return this.address;
+	}
+
+	public void setAddress(
+			java.util.List<com.samplespace.device_upgrade.address> address) {
+		this.address = address;
+	}
+
 	public customer(java.lang.String customerId, java.lang.String name,
 			java.util.Date dob, java.lang.String phone, java.lang.String email,
-			com.samplespace.device_upgrade.address shippingAddress,
-			com.samplespace.device_upgrade.address billingAddress,
-			java.util.List<com.samplespace.device_upgrade.product> products) {
+			java.util.List<com.samplespace.device_upgrade.product> products,
+			java.util.List<com.samplespace.device_upgrade.address> address) {
 		this.customerId = customerId;
 		this.name = name;
 		this.dob = dob;
 		this.phone = phone;
 		this.email = email;
-		this.shippingAddress = shippingAddress;
-		this.billingAddress = billingAddress;
 		this.products = products;
+		this.address = address;
 	}
 
 }
