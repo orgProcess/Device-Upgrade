@@ -8,28 +8,21 @@ public class address implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Type")
-	private java.lang.String type;
-	@org.kie.api.definition.type.Label(value = "Address 1")
+	@org.kie.api.definition.type.Label("Address 1")
 	private java.lang.String address1;
-	@org.kie.api.definition.type.Label(value = "Address 2")
+	@org.kie.api.definition.type.Label("Address 2")
 	private java.lang.String address2;
-	@org.kie.api.definition.type.Label(value = "City")
+	@org.kie.api.definition.type.Label("City")
 	private java.lang.String city;
-	@org.kie.api.definition.type.Label(value = "State")
+	@org.kie.api.definition.type.Label("State")
 	private java.lang.String state;
-	@org.kie.api.definition.type.Label(value = "Post Code")
+	@org.kie.api.definition.type.Label("Post Code")
 	private java.lang.String postCode;
 
+	@org.kie.api.definition.type.Label(value = "Type")
+	private java.util.List<java.lang.String> type;
+
 	public address() {
-	}
-
-	public java.lang.String getType() {
-		return this.type;
-	}
-
-	public void setType(java.lang.String type) {
-		this.type = type;
 	}
 
 	public java.lang.String getAddress1() {
@@ -72,15 +65,23 @@ public class address implements java.io.Serializable {
 		this.postCode = postCode;
 	}
 
-	public address(java.lang.String type, java.lang.String address1,
-			java.lang.String address2, java.lang.String city,
-			java.lang.String state, java.lang.String postCode) {
+	public java.util.List<java.lang.String> getType() {
+		return this.type;
+	}
+
+	public void setType(java.util.List<java.lang.String> type) {
 		this.type = type;
+	}
+
+	public address(java.lang.String address1, java.lang.String address2,
+			java.lang.String city, java.lang.String state,
+			java.lang.String postCode, java.util.List<java.lang.String> type) {
 		this.address1 = address1;
 		this.address2 = address2;
 		this.city = city;
 		this.state = state;
 		this.postCode = postCode;
+		this.type = type;
 	}
 
 }
