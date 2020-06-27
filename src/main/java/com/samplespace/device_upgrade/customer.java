@@ -19,11 +19,14 @@ public class customer implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Email")
 	private java.lang.String email;
 
-	@org.kie.api.definition.type.Label(value = "Shipping Address")
+	@org.kie.api.definition.type.Label("Shipping Address")
 	private com.samplespace.device_upgrade.address shippingAddress;
 
-	@org.kie.api.definition.type.Label(value = "Billing Address")
+	@org.kie.api.definition.type.Label("Billing Address")
 	private com.samplespace.device_upgrade.address billingAddress;
+
+	@org.kie.api.definition.type.Label(value = "Products")
+	private java.util.List<com.samplespace.device_upgrade.product> products;
 
 	public customer() {
 	}
@@ -86,10 +89,20 @@ public class customer implements java.io.Serializable {
 		this.billingAddress = billingAddress;
 	}
 
+	public java.util.List<com.samplespace.device_upgrade.product> getProducts() {
+		return this.products;
+	}
+
+	public void setProducts(
+			java.util.List<com.samplespace.device_upgrade.product> products) {
+		this.products = products;
+	}
+
 	public customer(java.lang.String customerId, java.lang.String name,
 			java.util.Date dob, java.lang.String phone, java.lang.String email,
 			com.samplespace.device_upgrade.address shippingAddress,
-			com.samplespace.device_upgrade.address billingAddress) {
+			com.samplespace.device_upgrade.address billingAddress,
+			java.util.List<com.samplespace.device_upgrade.product> products) {
 		this.customerId = customerId;
 		this.name = name;
 		this.dob = dob;
@@ -97,6 +110,7 @@ public class customer implements java.io.Serializable {
 		this.email = email;
 		this.shippingAddress = shippingAddress;
 		this.billingAddress = billingAddress;
+		this.products = products;
 	}
 
 }
