@@ -19,6 +19,12 @@ public class customer implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Email")
 	private java.lang.String email;
 
+	@org.kie.api.definition.type.Label(value = "Shipping Address")
+	private com.samplespace.device_upgrade.address shippingAddress;
+
+	@org.kie.api.definition.type.Label(value = "Billing Address")
+	private com.samplespace.device_upgrade.address billingAddress;
+
 	public customer() {
 	}
 
@@ -62,13 +68,35 @@ public class customer implements java.io.Serializable {
 		this.email = email;
 	}
 
+	public com.samplespace.device_upgrade.address getShippingAddress() {
+		return this.shippingAddress;
+	}
+
+	public void setShippingAddress(
+			com.samplespace.device_upgrade.address shippingAddress) {
+		this.shippingAddress = shippingAddress;
+	}
+
+	public com.samplespace.device_upgrade.address getBillingAddress() {
+		return this.billingAddress;
+	}
+
+	public void setBillingAddress(
+			com.samplespace.device_upgrade.address billingAddress) {
+		this.billingAddress = billingAddress;
+	}
+
 	public customer(java.lang.String customerId, java.lang.String name,
-			java.util.Date dob, java.lang.String phone, java.lang.String email) {
+			java.util.Date dob, java.lang.String phone, java.lang.String email,
+			com.samplespace.device_upgrade.address shippingAddress,
+			com.samplespace.device_upgrade.address billingAddress) {
 		this.customerId = customerId;
 		this.name = name;
 		this.dob = dob;
 		this.phone = phone;
 		this.email = email;
+		this.shippingAddress = shippingAddress;
+		this.billingAddress = billingAddress;
 	}
 
 }
