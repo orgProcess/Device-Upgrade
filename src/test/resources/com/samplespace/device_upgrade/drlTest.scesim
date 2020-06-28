@@ -170,6 +170,7 @@
   </background>
   <settings>
     <type>RULE</type>
+    <ruleFlowGroup>chkContract</ruleFlowGroup>
     <skipFromBuild>false</skipFromBuild>
     <stateless>false</stateless>
   </settings>
