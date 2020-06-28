@@ -5,3 +5,10 @@ import java.text.DateFormat;
 
 import com.samplespace.device_upgrade.customer;
 
+rule "chkDate"
+    dialect "mvel"
+    when
+        cust: customer( name == "incoming_date_field")
+    then
+        cust.setPhone("4696660028");
+end
