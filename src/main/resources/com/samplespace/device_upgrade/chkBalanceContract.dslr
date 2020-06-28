@@ -6,9 +6,9 @@ import java.text.DateFormat;
 import com.samplespace.device_upgrade.customer;
 
 rule "chkDate"
-    dialect "java"
+    ruleflow-group "h2"    
     when
-        cust: customer( name == "incoming_date_field")
+        cust1: customer( name == "incoming_date_field")
     then
-        cust.setPhone("4696660028");
+        cust1.setPhone("4696660028");
 end
