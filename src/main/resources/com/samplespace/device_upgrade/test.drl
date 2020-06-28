@@ -1,2 +1,10 @@
 package com.samplespace.device_upgrade;
 
+rule "ApplePay"
+    ruleflow-group "h2cd"
+	when
+		offer: customer(name == "ApplePay")
+
+	then
+		offer.setPhone("15");
+	end
