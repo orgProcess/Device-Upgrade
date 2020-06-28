@@ -2,8 +2,8 @@ package com.samplespace.device_upgrade;
 
 import com.samplespace.device_upgrade.customer;
 
-rule "ApplePay"
-    ruleflow-group "h2cd"
+rule "chkBalanceContract"
+    ruleflow-group "chkContract"
 	when
 		offer: customer(name == "ApplePay")
 
