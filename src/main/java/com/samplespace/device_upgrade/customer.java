@@ -22,8 +22,11 @@ public class customer implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Products")
 	private java.util.List<com.samplespace.device_upgrade.product> products;
 
-	@org.kie.api.definition.type.Label(value = "Address")
+	@org.kie.api.definition.type.Label("Address")
 	private java.util.List<com.samplespace.device_upgrade.address> address;
+
+	@org.kie.api.definition.type.Label(value = "Contract")
+	private com.samplespace.device_upgrade.contract contract;
 
 	public customer() {
 	}
@@ -86,10 +89,19 @@ public class customer implements java.io.Serializable {
 		this.address = address;
 	}
 
+	public com.samplespace.device_upgrade.contract getContract() {
+		return this.contract;
+	}
+
+	public void setContract(com.samplespace.device_upgrade.contract contract) {
+		this.contract = contract;
+	}
+
 	public customer(java.lang.String customerId, java.lang.String name,
 			java.util.Date dob, java.lang.String phone, java.lang.String email,
 			java.util.List<com.samplespace.device_upgrade.product> products,
-			java.util.List<com.samplespace.device_upgrade.address> address) {
+			java.util.List<com.samplespace.device_upgrade.address> address,
+			com.samplespace.device_upgrade.contract contract) {
 		this.customerId = customerId;
 		this.name = name;
 		this.dob = dob;
@@ -97,6 +109,7 @@ public class customer implements java.io.Serializable {
 		this.email = email;
 		this.products = products;
 		this.address = address;
+		this.contract = contract;
 	}
 
 }
