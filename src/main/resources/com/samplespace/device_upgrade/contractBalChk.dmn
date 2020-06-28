@@ -54,19 +54,19 @@
       <dmn:context id="_E39B9B3C-F165-4E08-AF5E-E696C7268DA5">
         <dmn:contextEntry>
           <dmn:variable id="_6B65A10D-2AB1-4F7A-BF62-4EDAD1A51469" name="contractOver" typeRef="boolean"/>
-          <dmn:literalExpression>
-            <dmn:text>null // auto-filled by the editor to avoid missing empty expression.</dmn:text>
+          <dmn:literalExpression id="_3406AA86-FB98-4879-8819-0071A92258B4">
+            <dmn:text>false</dmn:text>
           </dmn:literalExpression>
         </dmn:contextEntry>
         <dmn:contextEntry>
           <dmn:variable id="_F37D5E82-0482-4497-84DE-05A75215C9F6" name="accBalance" typeRef="number"/>
-          <dmn:literalExpression>
-            <dmn:text>null // auto-filled by the editor to avoid missing empty expression.</dmn:text>
+          <dmn:literalExpression id="_F1819851-3BBB-457F-AAD5-FA0F2353EFE7">
+            <dmn:text>100</dmn:text>
           </dmn:literalExpression>
         </dmn:contextEntry>
         <dmn:contextEntry>
           <dmn:literalExpression id="_580BF8EE-2F12-414A-B30B-B66952F97422">
-            <dmn:text></dmn:text>
+            <dmn:text>{ "contractOver": contractOver, "accBalance": accBalance}</dmn:text>
           </dmn:literalExpression>
         </dmn:contextEntry>
       </dmn:context>
@@ -79,6 +79,12 @@
           <kie:ComponentWidths dmnElementRef="_E39B9B3C-F165-4E08-AF5E-E696C7268DA5">
             <kie:width>50.0</kie:width>
             <kie:width>100.0</kie:width>
+            <kie:width>300.0</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_3406AA86-FB98-4879-8819-0071A92258B4">
+            <kie:width>300.0</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_F1819851-3BBB-457F-AAD5-FA0F2353EFE7">
             <kie:width>300.0</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_580BF8EE-2F12-414A-B30B-B66952F97422">
