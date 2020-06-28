@@ -24,6 +24,14 @@
       <dmn:typeRef>Any</dmn:typeRef>
     </dmn:itemComponent>
   </dmn:itemDefinition>
+  <dmn:itemDefinition id="_3855949B-E83E-4605-A7C5-018412C45D5B" name="contractBalance" isCollection="false">
+    <dmn:itemComponent id="_032D1060-AD4A-4B46-8CB2-4E85F1128BC0" name="accBalance" isCollection="false">
+      <dmn:typeRef>number</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_7032C1C9-6913-447E-A137-65C0E08F8440" name="contractOver" isCollection="false">
+      <dmn:typeRef>boolean</dmn:typeRef>
+    </dmn:itemComponent>
+  </dmn:itemDefinition>
   <dmn:inputData id="_00E9516B-5C6F-44A3-B72C-74686823DCBA" name="Customer">
     <dmn:extensionElements/>
     <dmn:variable id="_981039A0-87B9-410A-9D05-A1E72CE6669C" name="Customer" typeRef="number"/>
@@ -43,25 +51,23 @@
     <dmn:variable id="_5D1D8B5A-9C75-4E8F-9814-0020D560E246" name="ChkCreditAccBalance" typeRef="boolean"/>
     <dmn:encapsulatedLogic id="_7E5C2F3F-ECB9-4695-BBC0-1CD5BD189BE0" kind="FEEL">
       <dmn:formalParameter id="_4A8B271A-355D-4FC4-A216-E8276D9F3CF2" name="Customer" typeRef="customer"/>
-      <dmn:context id="_81319F22-2B40-4F9E-939C-64CC0D714ECC">
+      <dmn:context id="_E39B9B3C-F165-4E08-AF5E-E696C7268DA5">
         <dmn:contextEntry>
-          <dmn:variable id="_AAB6C0B1-5241-4FAD-9BC4-841DC0BDB24B" name="ContextEntry-1"/>
-          <dmn:decisionTable id="_70574F04-F22D-4F25-8E29-47B1426DE9AD" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
-            <dmn:input id="_3B7A8B85-DB53-473D-9FD1-59DD4AD77DDA">
-              <dmn:inputExpression id="_DB5ED481-1D78-4F1A-AA17-421A95487B2A">
-                <dmn:text>input-1</dmn:text>
-              </dmn:inputExpression>
-            </dmn:input>
-            <dmn:output id="_CEFCBEBC-0F49-4E81-9E66-52D418C14F87"/>
-            <dmn:rule id="_47A59CB0-90DD-4450-AEAC-71F18656C8E9">
-              <dmn:inputEntry id="_32595863-455E-400D-85A8-7253AFC422B8">
-                <dmn:text>-</dmn:text>
-              </dmn:inputEntry>
-              <dmn:outputEntry id="_6F4DDE9E-A133-4F13-8632-DA12351C371D">
-                <dmn:text></dmn:text>
-              </dmn:outputEntry>
-            </dmn:rule>
-          </dmn:decisionTable>
+          <dmn:variable id="_6B65A10D-2AB1-4F7A-BF62-4EDAD1A51469" name="contractOver" typeRef="boolean"/>
+          <dmn:literalExpression>
+            <dmn:text>null // auto-filled by the editor to avoid missing empty expression.</dmn:text>
+          </dmn:literalExpression>
+        </dmn:contextEntry>
+        <dmn:contextEntry>
+          <dmn:variable id="_F37D5E82-0482-4497-84DE-05A75215C9F6" name="accBalance" typeRef="number"/>
+          <dmn:literalExpression>
+            <dmn:text>null // auto-filled by the editor to avoid missing empty expression.</dmn:text>
+          </dmn:literalExpression>
+        </dmn:contextEntry>
+        <dmn:contextEntry>
+          <dmn:literalExpression id="_580BF8EE-2F12-414A-B30B-B66952F97422">
+            <dmn:text></dmn:text>
+          </dmn:literalExpression>
         </dmn:contextEntry>
       </dmn:context>
     </dmn:encapsulatedLogic>
@@ -70,20 +76,17 @@
     <dmndi:DMNDiagram>
       <di:extension>
         <kie:ComponentsWidthsExtension>
-          <kie:ComponentWidths dmnElementRef="_81319F22-2B40-4F9E-939C-64CC0D714ECC">
+          <kie:ComponentWidths dmnElementRef="_E39B9B3C-F165-4E08-AF5E-E696C7268DA5">
             <kie:width>50.0</kie:width>
             <kie:width>100.0</kie:width>
-            <kie:width>848.0</kie:width>
+            <kie:width>300.0</kie:width>
           </kie:ComponentWidths>
-          <kie:ComponentWidths dmnElementRef="_70574F04-F22D-4F25-8E29-47B1426DE9AD">
-            <kie:width>50.0</kie:width>
-            <kie:width>100.0</kie:width>
-            <kie:width>100.0</kie:width>
-            <kie:width>578.0</kie:width>
+          <kie:ComponentWidths dmnElementRef="_580BF8EE-2F12-414A-B30B-B66952F97422">
+            <kie:width>300.0</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_7E5C2F3F-ECB9-4695-BBC0-1CD5BD189BE0">
             <kie:width>50.0</kie:width>
-            <kie:width>1018.0</kie:width>
+            <kie:width>470.0</kie:width>
           </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
       </di:extension>
