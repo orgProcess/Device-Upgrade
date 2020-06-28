@@ -13,8 +13,17 @@ public class product implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Product Name")
 	private java.lang.String productName;
 
-	@org.kie.api.definition.type.Label(value = "Product Description")
+	@org.kie.api.definition.type.Label("Product Description")
 	private java.lang.String productDescription;
+
+	@org.kie.api.definition.type.Label(value = "Type")
+	private java.lang.String type;
+
+	@org.kie.api.definition.type.Label(value = "Start Date")
+	private java.util.Date startDate;
+
+	@org.kie.api.definition.type.Label(value = "End Date")
+	private java.util.Date endDate;
 
 	public product() {
 	}
@@ -43,11 +52,39 @@ public class product implements java.io.Serializable {
 		this.productDescription = productDescription;
 	}
 
+	public java.lang.String getType() {
+		return this.type;
+	}
+
+	public void setType(java.lang.String type) {
+		this.type = type;
+	}
+
+	public java.util.Date getStartDate() {
+		return this.startDate;
+	}
+
+	public void setStartDate(java.util.Date startDate) {
+		this.startDate = startDate;
+	}
+
+	public java.util.Date getEndDate() {
+		return this.endDate;
+	}
+
+	public void setEndDate(java.util.Date endDate) {
+		this.endDate = endDate;
+	}
+
 	public product(java.lang.String productId, java.lang.String productName,
-			java.lang.String productDescription) {
+			java.lang.String productDescription, java.lang.String type,
+			java.util.Date startDate, java.util.Date endDate) {
 		this.productId = productId;
 		this.productName = productName;
 		this.productDescription = productDescription;
+		this.type = type;
+		this.startDate = startDate;
+		this.endDate = endDate;
 	}
 
 }
