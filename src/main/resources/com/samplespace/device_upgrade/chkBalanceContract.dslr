@@ -4,10 +4,11 @@ package com.samplespace.device_upgrade;
 
 import com.samplespace.device_upgrade.customer;
 
-rule "chkDate"
-    ruleflow-group "h2"    
-    when
-        cust1: customer( name == "incoming_date_field")
-    then
-        cust1.setPhone("4696660028");
+dialect "mvel"
+
+rule "ICD Code Covered by Policy Type"
+	when
+		$claim : Claim(icdCodeCoveredByPolicyType == null)
+	then
+		$claim.icdCodeUnknown = true
 end
