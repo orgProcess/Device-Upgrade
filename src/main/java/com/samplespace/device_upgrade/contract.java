@@ -6,12 +6,70 @@ package com.samplespace.device_upgrade;
 
 public class contract implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public contract() {
-    }
+	@org.kie.api.definition.type.Label(value = "Type")
+	private java.lang.String type;
+	@org.kie.api.definition.type.Label(value = "Name")
+	private java.lang.String name;
+	@org.kie.api.definition.type.Label(value = "Start Date")
+	private java.util.Date startDate;
+	@org.kie.api.definition.type.Label(value = "End Date")
+	private java.util.Date endDate;
+	@org.kie.api.definition.type.Label(value = "Details")
+	private java.lang.String details;
 
+	public contract() {
+	}
 
+	public java.lang.String getType() {
+		return this.type;
+	}
 
+	public void setType(java.lang.String type) {
+		this.type = type;
+	}
+
+	public java.lang.String getName() {
+		return this.name;
+	}
+
+	public void setName(java.lang.String name) {
+		this.name = name;
+	}
+
+	public java.util.Date getStartDate() {
+		return this.startDate;
+	}
+
+	public void setStartDate(java.util.Date startDate) {
+		this.startDate = startDate;
+	}
+
+	public java.util.Date getEndDate() {
+		return this.endDate;
+	}
+
+	public void setEndDate(java.util.Date endDate) {
+		this.endDate = endDate;
+	}
+
+	public java.lang.String getDetails() {
+		return this.details;
+	}
+
+	public void setDetails(java.lang.String details) {
+		this.details = details;
+	}
+
+	public contract(java.lang.String type, java.lang.String name,
+			java.util.Date startDate, java.util.Date endDate,
+			java.lang.String details) {
+		this.type = type;
+		this.name = name;
+		this.startDate = startDate;
+		this.endDate = endDate;
+		this.details = details;
+	}
 
 }
