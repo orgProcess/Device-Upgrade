@@ -7,8 +7,6 @@ import java.util.Date;
 
 
 
-
-
 rule "ChkCContract"
  ruleflow-group "BalanceContractChk"
 when
