@@ -7,7 +7,7 @@ import java.util.Date
 import java.util.SimpleDateFormat
 
 
-function Date daysInThePast(int days){
+function Date daysInThePast(String contractEndDate){
         	SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         	Date passedDate = dateFormat.parse(contractEndDate);
         	return passedDate.after(new Date());
