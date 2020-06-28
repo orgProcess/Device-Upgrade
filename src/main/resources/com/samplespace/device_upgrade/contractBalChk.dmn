@@ -35,9 +35,29 @@
       <dmn:typeRef>boolean</dmn:typeRef>
     </dmn:itemComponent>
   </dmn:itemDefinition>
+  <dmn:itemDefinition id="_D0E8CC67-C6F4-4071-8EEA-E3E381D4C973" name="contract" isCollection="false">
+    <dmn:itemComponent id="_6A3955B8-4A65-42F4-A39A-7B7A4EFC75A3" name="startDate" isCollection="false">
+      <dmn:typeRef>date</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_BCA372AC-DAF6-4AC5-88E5-6D8C53DBEE25" name="type" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_FAB1D33F-28BF-4255-9F39-FE20B1E2CC16" name="details" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_FE950D2D-9B77-4ECB-B892-2465BDB3D24D" name="name" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_F6E518A5-E9BE-43D6-919C-8A7695F7178E" name="endDate" isCollection="false">
+      <dmn:typeRef>date</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_92C0D374-349A-45A9-BCB5-D5B3CDFB1BD8" name="monthlyPayment" isCollection="false">
+      <dmn:typeRef>number</dmn:typeRef>
+    </dmn:itemComponent>
+  </dmn:itemDefinition>
   <dmn:inputData id="_00E9516B-5C6F-44A3-B72C-74686823DCBA" name="Customer">
     <dmn:extensionElements/>
-    <dmn:variable id="_981039A0-87B9-410A-9D05-A1E72CE6669C" name="Customer" typeRef="customer"/>
+    <dmn:variable id="_981039A0-87B9-410A-9D05-A1E72CE6669C" name="Customer"/>
   </dmn:inputData>
   <dmn:decision id="_B43982E5-93C2-46B8-B434-828F759EFFBA" name="CreditBalanceOk">
     <dmn:extensionElements/>
