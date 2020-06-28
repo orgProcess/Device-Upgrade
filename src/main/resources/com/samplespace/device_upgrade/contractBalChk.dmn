@@ -94,7 +94,7 @@
         </dmn:contextEntry>
         <dmn:contextEntry>
           <dmn:literalExpression id="_580BF8EE-2F12-414A-B30B-B66952F97422">
-            <dmn:text>{ "contractOver": contractOver, "accBalance": accBalance, "rtDate": date("2020-06-20")}</dmn:text>
+            <dmn:text>{ "contractOver": contractOver, "accBalance": accBalance, "rtDate": today()}</dmn:text>
           </dmn:literalExpression>
         </dmn:contextEntry>
       </dmn:context>
