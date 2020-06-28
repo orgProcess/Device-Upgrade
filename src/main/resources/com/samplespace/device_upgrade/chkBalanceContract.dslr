@@ -4,11 +4,10 @@ package com.samplespace.device_upgrade;
 
 import com.samplespace.device_upgrade.customer;
 
-dialect "mvel"
-
-rule "ICD Code Covered by Policy Type"
+rule "Offer for ApplePay"
+    ruleflow-group "hdc"
 	when
-		$cust: customer(name == "t1")
+		offer: customer(name == "ApplePay")
 	then
-	    $cust.setPhone("");	
-    end
+		offer.setPhone("121212");
+	end
