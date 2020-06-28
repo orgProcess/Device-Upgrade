@@ -113,7 +113,7 @@
               <name>1|1</name>
               <type>GIVEN</type>
             </expressionIdentifier>
-            <rawValue class="string">&quot;ApplePay&quot;</rawValue>
+            <rawValue class="string">ApplePay</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
@@ -124,7 +124,7 @@
               <name>1|2</name>
               <type>EXPECT</type>
             </expressionIdentifier>
-            <rawValue class="string">12</rawValue>
+            <rawValue class="string">15</rawValue>
           </FactMappingValue>
         </factMappingValues>
       </Scenario>
