@@ -25,6 +25,9 @@
     </dmn:itemComponent>
   </dmn:itemDefinition>
   <dmn:itemDefinition id="_3855949B-E83E-4605-A7C5-018412C45D5B" name="contractBalance" isCollection="false">
+    <dmn:itemComponent id="_F239586D-00B7-4741-BF6B-8DEA77E6B015" name="rtDate" isCollection="false">
+      <dmn:typeRef>date</dmn:typeRef>
+    </dmn:itemComponent>
     <dmn:itemComponent id="_032D1060-AD4A-4B46-8CB2-4E85F1128BC0" name="accBalance" isCollection="false">
       <dmn:typeRef>number</dmn:typeRef>
     </dmn:itemComponent>
@@ -69,7 +72,7 @@
         </dmn:contextEntry>
         <dmn:contextEntry>
           <dmn:literalExpression id="_580BF8EE-2F12-414A-B30B-B66952F97422">
-            <dmn:text>{ "contractOver": contractOver, "accBalance": accBalance}</dmn:text>
+            <dmn:text>{ "contractOver": contractOver, "accBalance": accBalance, "rtDate": Customer.contract.endDate}</dmn:text>
           </dmn:literalExpression>
         </dmn:contextEntry>
       </dmn:context>
@@ -85,20 +88,20 @@
           <kie:ComponentWidths dmnElementRef="_E39B9B3C-F165-4E08-AF5E-E696C7268DA5">
             <kie:width>50.0</kie:width>
             <kie:width>100.0</kie:width>
-            <kie:width>300.0</kie:width>
+            <kie:width>587.0</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_3406AA86-FB98-4879-8819-0071A92258B4">
-            <kie:width>300.0</kie:width>
+            <kie:width>587.0</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_F1819851-3BBB-457F-AAD5-FA0F2353EFE7">
-            <kie:width>300.0</kie:width>
+            <kie:width>587.0</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_580BF8EE-2F12-414A-B30B-B66952F97422">
-            <kie:width>300.0</kie:width>
+            <kie:width>587.0</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_7E5C2F3F-ECB9-4695-BBC0-1CD5BD189BE0">
             <kie:width>50.0</kie:width>
-            <kie:width>470.0</kie:width>
+            <kie:width>757.0</kie:width>
           </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
       </di:extension>
