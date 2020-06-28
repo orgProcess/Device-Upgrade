@@ -1,7 +1,3 @@
 package com.samplespace.device_upgrade;
 
 import java.util.Date;
-
-function boolean chkDate() {
-    return false;
-}
