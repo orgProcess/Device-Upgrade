@@ -7,16 +7,12 @@ import java.util.Date;
 import java.text.SimpleDateFormat;
 
 
-function Date daysInThePast(String contractEndDate){
-        	SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-        	Date passedDate = dateFormat.parse(contractEndDate);
-        	return passedDate.after(new Date());
-}
+
 
 rule "ChkCContract"
  ruleflow-group "BalanceContractChk"
 when
-    cust: Customer(cust.contract.endDate);
+    cust: Customer();
     
 then
      
