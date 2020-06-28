@@ -6,7 +6,11 @@ import com.samplespace.device_upgrade.contract;
 import java.util.Date;
 import java.text.*;
 
-
+function Date daysInThePast(String contractEndDate){
+        	SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        	Date passedDate = dateFormat.parse(contractEndDate);
+        	return passedDate.after(new Date());
+}
 
 
 rule "ChkCContract"
