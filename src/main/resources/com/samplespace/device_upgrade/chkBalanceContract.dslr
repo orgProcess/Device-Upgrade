@@ -6,7 +6,7 @@ import java.text.DateFormat;
 import com.samplespace.device_upgrade.customer;
 
 rule "chkDate"
-    ruleflow-group "ch"
+
     when
         cust: customer( name == "incoming_date_field")
     then
