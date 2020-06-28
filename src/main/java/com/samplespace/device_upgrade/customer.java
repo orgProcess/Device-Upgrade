@@ -19,13 +19,10 @@ public class customer implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Email")
 	private java.lang.String email;
 
-	@org.kie.api.definition.type.Label("Products")
-	private java.util.List<com.samplespace.device_upgrade.product> products;
-
 	@org.kie.api.definition.type.Label("Address")
 	private java.util.List<com.samplespace.device_upgrade.address> address;
 
-	@org.kie.api.definition.type.Label(value = "Contract")
+	@org.kie.api.definition.type.Label("Contract")
 	private com.samplespace.device_upgrade.contract contract;
 
 	public customer() {
@@ -71,15 +68,6 @@ public class customer implements java.io.Serializable {
 		this.email = email;
 	}
 
-	public java.util.List<com.samplespace.device_upgrade.product> getProducts() {
-		return this.products;
-	}
-
-	public void setProducts(
-			java.util.List<com.samplespace.device_upgrade.product> products) {
-		this.products = products;
-	}
-
 	public java.util.List<com.samplespace.device_upgrade.address> getAddress() {
 		return this.address;
 	}
@@ -99,7 +87,6 @@ public class customer implements java.io.Serializable {
 
 	public customer(java.lang.String customerId, java.lang.String name,
 			java.util.Date dob, java.lang.String phone, java.lang.String email,
-			java.util.List<com.samplespace.device_upgrade.product> products,
 			java.util.List<com.samplespace.device_upgrade.address> address,
 			com.samplespace.device_upgrade.contract contract) {
 		this.customerId = customerId;
@@ -107,7 +94,6 @@ public class customer implements java.io.Serializable {
 		this.dob = dob;
 		this.phone = phone;
 		this.email = email;
-		this.products = products;
 		this.address = address;
 		this.contract = contract;
 	}
