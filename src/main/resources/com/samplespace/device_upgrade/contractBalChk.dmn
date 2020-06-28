@@ -94,7 +94,7 @@
         </dmn:contextEntry>
         <dmn:contextEntry>
           <dmn:literalExpression id="_580BF8EE-2F12-414A-B30B-B66952F97422">
-            <dmn:text>{ "contractOver": contractOver, "accBalance": accBalance, "rtDate": string(today())}</dmn:text>
+            <dmn:text>{ "contractOver": contractOver, "accBalance": accBalance, "rtDate": string(date and time(now()))}</dmn:text>
           </dmn:literalExpression>
         </dmn:contextEntry>
       </dmn:context>
