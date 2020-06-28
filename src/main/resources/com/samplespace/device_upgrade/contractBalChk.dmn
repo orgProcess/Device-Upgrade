@@ -59,7 +59,7 @@
   </dmn:itemDefinition>
   <dmn:inputData id="_00E9516B-5C6F-44A3-B72C-74686823DCBA" name="Customer">
     <dmn:extensionElements/>
-    <dmn:variable id="_981039A0-87B9-410A-9D05-A1E72CE6669C" name="Customer"/>
+    <dmn:variable id="_981039A0-87B9-410A-9D05-A1E72CE6669C" name="Customer" typeRef="customer"/>
   </dmn:inputData>
   <dmn:decision id="_B43982E5-93C2-46B8-B434-828F759EFFBA" name="CreditBalanceOk">
     <dmn:extensionElements/>
