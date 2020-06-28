@@ -12,7 +12,9 @@
       <dmn:typeRef>string</dmn:typeRef>
     </dmn:itemComponent>
     <dmn:itemComponent id="_FA87620B-CE61-4762-B3D9-38F5F200082B" name="contract" isCollection="false">
-      <dmn:typeRef>Any</dmn:typeRef>
+      <dmn:itemComponent id="_5A3418A7-3BAA-4790-8A65-2F05A2716EDD" name="endDate" isCollection="false">
+        <dmn:typeRef>date</dmn:typeRef>
+      </dmn:itemComponent>
     </dmn:itemComponent>
     <dmn:itemComponent id="_C2AB2806-CF80-4C2B-854D-FAA00CFC508D" name="dob" isCollection="false">
       <dmn:typeRef>date and time</dmn:typeRef>
@@ -57,7 +59,7 @@
   </dmn:itemDefinition>
   <dmn:inputData id="_00E9516B-5C6F-44A3-B72C-74686823DCBA" name="Customer">
     <dmn:extensionElements/>
-    <dmn:variable id="_981039A0-87B9-410A-9D05-A1E72CE6669C" name="Customer" typeRef="customer"/>
+    <dmn:variable id="_981039A0-87B9-410A-9D05-A1E72CE6669C" name="Customer"/>
   </dmn:inputData>
   <dmn:decision id="_B43982E5-93C2-46B8-B434-828F759EFFBA" name="CreditBalanceOk">
     <dmn:extensionElements/>
@@ -131,7 +133,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="432" y="266" width="100" height="50"/>
+        <dc:Bounds x="432" y="271" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_B43982E5-93C2-46B8-B434-828F759EFFBA" dmnElementRef="_B43982E5-93C2-46B8-B434-828F759EFFBA" isCollapsed="false">
@@ -153,7 +155,7 @@
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-_F485BC5A-6C20-4EA7-B85D-C26267744194" dmnElementRef="_F485BC5A-6C20-4EA7-B85D-C26267744194">
-        <di:waypoint x="482" y="291"/>
+        <di:waypoint x="482" y="296"/>
         <di:waypoint x="482.5" y="152"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-_734E479D-8077-4410-A7A5-1A6888400C93" dmnElementRef="_734E479D-8077-4410-A7A5-1A6888400C93">
