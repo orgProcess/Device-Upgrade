@@ -1,12 +1,2 @@
 package com.samplespace.device_upgrade;
 
-
-
-rule "ChkCContract"
- ruleflow-group "BalanceContractChk"
-when
-    cust: Customer();
-    
-then
-     
-end
