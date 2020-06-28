@@ -8,16 +8,19 @@ public class contract implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Type")
+	@org.kie.api.definition.type.Label("Type")
 	private java.lang.String type;
-	@org.kie.api.definition.type.Label(value = "Name")
+	@org.kie.api.definition.type.Label("Name")
 	private java.lang.String name;
-	@org.kie.api.definition.type.Label(value = "Start Date")
+	@org.kie.api.definition.type.Label("Start Date")
 	private java.util.Date startDate;
-	@org.kie.api.definition.type.Label(value = "End Date")
+	@org.kie.api.definition.type.Label("End Date")
 	private java.util.Date endDate;
-	@org.kie.api.definition.type.Label(value = "Details")
+	@org.kie.api.definition.type.Label("Details")
 	private java.lang.String details;
+
+	@org.kie.api.definition.type.Label(value = "Monthly Payment")
+	private java.lang.Integer monthlyPayment;
 
 	public contract() {
 	}
@@ -62,14 +65,23 @@ public class contract implements java.io.Serializable {
 		this.details = details;
 	}
 
+	public java.lang.Integer getMonthlyPayment() {
+		return this.monthlyPayment;
+	}
+
+	public void setMonthlyPayment(java.lang.Integer monthlyPayment) {
+		this.monthlyPayment = monthlyPayment;
+	}
+
 	public contract(java.lang.String type, java.lang.String name,
 			java.util.Date startDate, java.util.Date endDate,
-			java.lang.String details) {
+			java.lang.String details, java.lang.Integer monthlyPayment) {
 		this.type = type;
 		this.name = name;
 		this.startDate = startDate;
 		this.endDate = endDate;
 		this.details = details;
+		this.monthlyPayment = monthlyPayment;
 	}
 
 }
