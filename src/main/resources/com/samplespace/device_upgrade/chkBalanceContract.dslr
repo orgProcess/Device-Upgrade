@@ -4,8 +4,7 @@ import com.samplespace.device_upgrade.customer;
 import com.samplespace.device_upgrade.contract;
 
 import java.util.Date;
-
-import java.util.DateFormat;
+import java.text.SimpleDateFormat;
 
 
 function Date daysInThePast(String contractEndDate){
