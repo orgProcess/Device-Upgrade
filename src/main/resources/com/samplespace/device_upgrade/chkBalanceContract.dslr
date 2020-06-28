@@ -8,7 +8,7 @@ dialect "mvel"
 
 rule "ICD Code Covered by Policy Type"
 	when
-		
+		$cust: customer(name == "t1")
 	then
-		
-end
+	    $cust.setPhone("");	
+    end
