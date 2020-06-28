@@ -4,6 +4,11 @@ import com.samplespace.device_upgrade.customer;
 import java.util.Date;
 import java.text.SimpleDateFormat;
 
+function boolean test(){
+    return false;
+}
+
+
 
 rule "chkBalanceContract"
     ruleflow-group "chkContract"
