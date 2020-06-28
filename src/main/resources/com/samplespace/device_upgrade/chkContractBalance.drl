@@ -5,7 +5,7 @@ import java.util.Date;
 import java.text.SimpleDateFormat;
 
 function boolean test(){
-    return false;
+    return true;
 }
 
 
