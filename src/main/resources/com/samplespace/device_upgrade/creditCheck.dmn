@@ -42,7 +42,7 @@
     <dmn:extensionElements/>
     <dmn:variable id="_5D1D8B5A-9C75-4E8F-9814-0020D560E246" name="ChkCreditAccBalance" typeRef="boolean"/>
     <dmn:encapsulatedLogic id="_7E5C2F3F-ECB9-4695-BBC0-1CD5BD189BE0" kind="FEEL">
-      <dmn:formalParameter id="_4A8B271A-355D-4FC4-A216-E8276D9F3CF2" name="CreditScore" typeRef="number"/>
+      <dmn:formalParameter id="_4A8B271A-355D-4FC4-A216-E8276D9F3CF2" name="Customer" typeRef="customer"/>
       <dmn:context id="_81319F22-2B40-4F9E-939C-64CC0D714ECC">
         <dmn:contextEntry>
           <dmn:variable id="_AAB6C0B1-5241-4FAD-9BC4-841DC0BDB24B" name="ContextEntry-1"/>
