@@ -38,13 +38,16 @@
   </dmn:inputData>
   <dmn:decision id="_B43982E5-93C2-46B8-B434-828F759EFFBA" name="CreditBalanceOk">
     <dmn:extensionElements/>
-    <dmn:variable id="_BBB7427E-CC36-4ACB-9E14-6A5CD025B515" name="CreditBalanceOk"/>
+    <dmn:variable id="_BBB7427E-CC36-4ACB-9E14-6A5CD025B515" name="CreditBalanceOk" typeRef="contractBalance"/>
     <dmn:informationRequirement id="_F485BC5A-6C20-4EA7-B85D-C26267744194">
       <dmn:requiredInput href="#_00E9516B-5C6F-44A3-B72C-74686823DCBA"/>
     </dmn:informationRequirement>
     <dmn:knowledgeRequirement id="_734E479D-8077-4410-A7A5-1A6888400C93">
       <dmn:requiredKnowledge href="#_11F84EE9-9E6C-47AF-8FE2-AB7B69A570F0"/>
     </dmn:knowledgeRequirement>
+    <dmn:literalExpression id="_090EBE8F-221C-4C64-929E-905628482902">
+      <dmn:text>ChkCreditAccBalance(Customer)</dmn:text>
+    </dmn:literalExpression>
   </dmn:decision>
   <dmn:businessKnowledgeModel id="_11F84EE9-9E6C-47AF-8FE2-AB7B69A570F0" name="ChkCreditAccBalance">
     <dmn:extensionElements/>
@@ -76,6 +79,9 @@
     <dmndi:DMNDiagram>
       <di:extension>
         <kie:ComponentsWidthsExtension>
+          <kie:ComponentWidths dmnElementRef="_090EBE8F-221C-4C64-929E-905628482902">
+            <kie:width>300.0</kie:width>
+          </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_E39B9B3C-F165-4E08-AF5E-E696C7268DA5">
             <kie:width>50.0</kie:width>
             <kie:width>100.0</kie:width>
