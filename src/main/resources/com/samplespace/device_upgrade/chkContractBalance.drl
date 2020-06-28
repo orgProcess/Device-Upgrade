@@ -14,7 +14,6 @@ rule "chkBalanceContract"
     ruleflow-group "chkContract"
 	when
 		offer: customer(test())
-
 	then
 		offer.setPhone("15");
 	end
