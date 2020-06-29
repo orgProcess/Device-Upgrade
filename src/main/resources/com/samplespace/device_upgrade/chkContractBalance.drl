@@ -37,9 +37,10 @@ rule "chkContract"
         //custRuleChkRes crcr = new custRuleChkRes();
         //cc.addCustRuleChkRes(crcr);
         cc.ruleCheck = new custRuleChkRes();
-        modify (cc) {
-            getRuleCheck().setIsContractOver(true);
-         }
+        cc.ruleCheck.setIsContractOver(false);
+        //modify (cc) {
+        //    getRuleCheck().setIsContractOver(true);
+        // }
     end
     
     
