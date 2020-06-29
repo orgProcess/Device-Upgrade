@@ -1,1 +1,2 @@
 'address.type' : ["Billing","Shipping"]
+'Type.type' : ["Device","Plan"]
