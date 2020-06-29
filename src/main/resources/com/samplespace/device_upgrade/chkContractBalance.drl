@@ -19,7 +19,7 @@ function boolean getBalance(int monthlyPay, String contractEndDate, custRuleChkR
     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
     String currDate = dateFormat.format(new Date());
     Date passedDate = dateFormat.parse(contractEndDate);
-    upgRes.setBalanceDue(passedDate.after(Math.ceil((double) ChronoUnit.DAYS.between(LocalDate.parse(currDate), LocalDate.parse(contractEndDate))/30) * monthlyPay));
+    int accBalance = (Math.ceil((double) ChronoUnit.DAYS.between(LocalDate.parse(currDate), LocalDate.parse(contractEndDate))/30) * monthlyPay);
     //return Math.ceil((double) ChronoUnit.DAYS.between(LocalDate.parse(currDate), LocalDate.parse(contractEndDate))/30) * monthlyPay;
     return true;
 }
