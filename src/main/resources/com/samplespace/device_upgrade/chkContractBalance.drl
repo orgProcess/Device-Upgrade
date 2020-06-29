@@ -4,9 +4,9 @@ import com.samplespace.device_upgrade.customer;
 import java.util.Date;
 import java.text.SimpleDateFormat;
 
-function boolean chkContractEndDate(String contractEndDate){
+function boolean chkContractEndDate(Date contractEndDate){
     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-    Date passedDate = dateFormat.parse(contractEndDate);
+    Date passedDate = dateFormat.parse(dateFormat.format(contractEndDate));
     return passedDate.after(new Date());
 }
 
