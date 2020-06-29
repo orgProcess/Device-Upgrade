@@ -38,12 +38,12 @@
           <hideColumn>false</hideColumn>
           <width>232</width>
           <header>Request Type</header>
-          <constraintValueType>3</constraintValueType>
+          <constraintValueType>1</constraintValueType>
           <factField>reqType</factField>
           <fieldType>String</fieldType>
           <operator>==</operator>
           <parameters/>
-          <binding>rt</binding>
+          <binding></binding>
         </condition-column52>
         <condition-column52>
           <hideColumn>false</hideColumn>
@@ -142,7 +142,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Device</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -181,7 +181,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Plan</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
