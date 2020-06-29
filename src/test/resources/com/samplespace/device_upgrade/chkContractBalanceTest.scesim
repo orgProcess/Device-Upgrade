@@ -38,10 +38,7 @@
               <step>customer</step>
             </ExpressionElement>
             <ExpressionElement>
-              <step>contract</step>
-            </ExpressionElement>
-            <ExpressionElement>
-              <step>endDate</step>
+              <step>name</step>
             </ExpressionElement>
           </expressionElements>
           <expressionIdentifier>
@@ -54,7 +51,7 @@
           </factIdentifier>
           <className>java.lang.String</className>
           <factAlias>customer</factAlias>
-          <expressionAlias>contract.endDate</expressionAlias>
+          <expressionAlias>name</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
           <columnWidth>322.0</columnWidth>
         </FactMapping>
