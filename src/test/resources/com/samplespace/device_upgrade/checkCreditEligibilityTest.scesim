@@ -53,7 +53,7 @@
           <factAlias>contract</factAlias>
           <expressionAlias>type</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>157.25</columnWidth>
+          <columnWidth>270.25</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -76,7 +76,7 @@
           <factAlias>custRuleChkRes</factAlias>
           <expressionAlias>balanceDue</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>157.25</columnWidth>
+          <columnWidth>270.25</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -102,7 +102,7 @@
           <factAlias>customer</factAlias>
           <expressionAlias>contract.monthlyPayment</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>157.25</columnWidth>
+          <columnWidth>270.25</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -125,7 +125,7 @@
           <factAlias>custRuleChkRes</factAlias>
           <expressionAlias>isCreditOk</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>157.25</columnWidth>
+          <columnWidth>270.25</columnWidth>
         </FactMapping>
       </factMappings>
     </scesimModelDescriptor>
