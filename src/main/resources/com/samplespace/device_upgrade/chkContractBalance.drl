@@ -8,14 +8,14 @@ import java.text.SimpleDateFormat;
 import java.time.temporal.ChronoUnit;
 import java.time.LocalDate;
 
-function boolean chkContractEndDate(String contractEndDate, customer upgRes) {
+function boolean chkContractEndDate(String contractEndDate, customer cust) {
     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
     Date passedDate = dateFormat.parse(contractEndDate);
     //upgRes.setIsContractOver(passedDate.after(new Date()));
     return passedDate.after(new Date());
 }
 
-function boolean getBalance(int monthlyPay, String contractEndDate, customer upgRes) {
+function boolean getBalance(int monthlyPay, String contractEndDate, customer cust) {
     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
     String currDate = dateFormat.format(new Date());
     Date passedDate = dateFormat.parse(contractEndDate);
