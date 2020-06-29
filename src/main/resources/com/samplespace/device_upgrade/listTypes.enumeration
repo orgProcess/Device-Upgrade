@@ -1,2 +1,2 @@
-'address.type' : ["Billing","Shipping"]
-'UpgradeType.upgradetype' : ["Device","Plan"]
+'address.addressType' : ["Billing","Shipping"]
+'UpgradeType.upgradeType' : ["Device","Plan"]
