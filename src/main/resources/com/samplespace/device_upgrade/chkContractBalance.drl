@@ -26,14 +26,27 @@ rule "chkContract"
     ruleflow-group "chkContract"
     dialect "mvel"
 	when
+		cc: customer(customer.contract.endDate != null)
+	then
+        if( cc.ruleCheck == null ) {
+          cc.ruleCheck = new custRuleChkRes();    
+        }
+        
+        cc.ruleCheck.setIsContractOver(chkContractEndDate(cc.contract.endDate));
+        //cc.ruleCheck.setBalanceDue(getBalance(cc.contract.monthlyPayment, cc.contract.endDate));
+    end
+    
+rule "chkBalance"
+    ruleflow-group "chkBalance"
+    dialect "mvel"
+	when
 		cc: customer(customer.contract.endDate != null, customer.contract.monthlyPayment != null)
 	then
         cc.ruleCheck = new custRuleChkRes();
         cc.ruleCheck.setIsContractOver(chkContractEndDate(cc.contract.endDate));
         cc.ruleCheck.setBalanceDue(getBalance(cc.contract.monthlyPayment, cc.contract.endDate));
     end
-    
-    
+        
     
     
     
