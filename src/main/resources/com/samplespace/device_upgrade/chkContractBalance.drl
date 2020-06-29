@@ -29,10 +29,10 @@ rule "chkContract"
 		cc: customer(customer.contract.endDate != null)
 	then
         cc.ruleCheck = new custRuleChkRes();
-        //cc.ruleCheck.setIsContractOver(chkContractEndDate(cc.contract.endDate));
-        modify (cc) {
-            ruleCheck.setIsContractOver(true);
-        }
+        cc.ruleCheck.setIsContractOver(chkContractEndDate(cc.contract.endDate));
+        //modify (cc) {
+            //ruleCheck.setIsContractOver(true);
+        //}
     end
     
     
