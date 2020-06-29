@@ -6,12 +6,47 @@ package com.samplespace.device_upgrade;
 
 public class custRuleChkRes implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public custRuleChkRes() {
-    }
+	@org.kie.api.definition.type.Label(value = "Is Contract Over")
+	private java.lang.Boolean isContractOver;
+	@org.kie.api.definition.type.Label(value = "Balance Due")
+	private java.lang.Long balanceDue;
+	@org.kie.api.definition.type.Label(value = "Is Credit Ok")
+	private java.lang.Boolean isCreditOk;
 
+	public custRuleChkRes() {
+	}
 
+	public java.lang.Boolean getIsContractOver() {
+		return this.isContractOver;
+	}
 
+	public void setIsContractOver(java.lang.Boolean isContractOver) {
+		this.isContractOver = isContractOver;
+	}
+
+	public java.lang.Long getBalanceDue() {
+		return this.balanceDue;
+	}
+
+	public void setBalanceDue(java.lang.Long balanceDue) {
+		this.balanceDue = balanceDue;
+	}
+
+	public java.lang.Boolean getIsCreditOk() {
+		return this.isCreditOk;
+	}
+
+	public void setIsCreditOk(java.lang.Boolean isCreditOk) {
+		this.isCreditOk = isCreditOk;
+	}
+
+	public custRuleChkRes(java.lang.Boolean isContractOver,
+			java.lang.Long balanceDue, java.lang.Boolean isCreditOk) {
+		this.isContractOver = isContractOver;
+		this.balanceDue = balanceDue;
+		this.isCreditOk = isCreditOk;
+	}
 
 }
