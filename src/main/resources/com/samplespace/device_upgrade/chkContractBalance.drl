@@ -30,5 +30,5 @@ rule "chkBalanceContract"
 		//offer: customer()
 		offer: customer(chkContractEndDate(customer.contract.endDate, customer), getBalance(customer.contract.monthlyPayment, customer.contract.endDate, customer))
 	then
-        upgRes.setIsCreditOk(false);
+        offer.setName("False");
 	end
