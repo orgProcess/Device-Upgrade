@@ -15,9 +15,9 @@ public class contract implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Name")
 	private java.lang.String name;
 	@org.kie.api.definition.type.Label("Start Date")
-	private LocalDate startDate;
+	private String startDate;
 	@org.kie.api.definition.type.Label("End Date")
-	private LocalDate endDate;
+	private String endDate;
 	@org.kie.api.definition.type.Label("Details")
 	private java.lang.String details;
 
@@ -59,24 +59,24 @@ public class contract implements java.io.Serializable {
 		this.monthlyPayment = monthlyPayment;
 	}
 
-	public java.time.LocalDate getStartDate() {
+	public java.lang.String getStartDate() {
 		return this.startDate;
 	}
 
-	public void setStartDate(java.time.LocalDate startDate) {
+	public void setStartDate(java.lang.String startDate) {
 		this.startDate = startDate;
 	}
 
-	public java.time.LocalDate getEndDate() {
+	public java.lang.String getEndDate() {
 		return this.endDate;
 	}
 
-	public void setEndDate(java.time.LocalDate endDate) {
+	public void setEndDate(java.lang.String endDate) {
 		this.endDate = endDate;
 	}
 
 	public contract(java.lang.String type, java.lang.String name,
-			java.time.LocalDate startDate, java.time.LocalDate endDate,
+			java.lang.String startDate, java.lang.String endDate,
 			java.lang.String details, java.lang.Integer monthlyPayment) {
 		this.type = type;
 		this.name = name;
