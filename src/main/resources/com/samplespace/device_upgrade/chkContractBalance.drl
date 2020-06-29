@@ -8,27 +8,27 @@ import java.text.SimpleDateFormat;
 import java.time.temporal.ChronoUnit;
 import java.time.LocalDate;
 
-function boolean chkContractEndDate(String contractEndDate, custRuleChkRes upgRes) {
+function boolean chkContractEndDate(String contractEndDate, customer upgRes) {
     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
     Date passedDate = dateFormat.parse(contractEndDate);
-    upgRes.setIsContractOver(passedDate.after(new Date()));
+    //upgRes.setIsContractOver(passedDate.after(new Date()));
     return passedDate.after(new Date());
 }
 
-function boolean getBalance(int monthlyPay, String contractEndDate, custRuleChkRes upgRes) {
+function boolean getBalance(int monthlyPay, String contractEndDate, customer upgRes) {
     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
     String currDate = dateFormat.format(new Date());
     Date passedDate = dateFormat.parse(contractEndDate);
     int accBalance = (int) (Math.ceil((double) ChronoUnit.DAYS.between(LocalDate.parse(currDate), LocalDate.parse(contractEndDate))/30) * monthlyPay);
-    upgRes.setBalanceDue(accBalance);
+    //upgRes.setBalanceDue(accBalance);
     return true;
 }
 
 rule "chkBalanceContract"
     ruleflow-group "chkContract"
 	when
-		upgRes: custRuleChkRes()
-		offer: customer(chkContractEndDate(customer.contract.endDate, upgRes), getBalance(customer.contract.monthlyPayment, customer.contract.endDate, upgRes))
+		//offer: customer()
+		offer: customer(chkContractEndDate(customer.contract.endDate, customer), getBalance(customer.contract.monthlyPayment, customer.contract.endDate, customer))
 	then
         upgRes.setIsCreditOk(false);
 	end
