@@ -29,7 +29,7 @@ rule "chkContract"
 	when
 		//offer: customer()
 		//offer: customer(chkContractEndDate(customer.contract.endDate), getBalance(customer.contract.monthlyPayment, customer.contract.endDate))
-		offer: customer(customer.contract.endDate after new Date())
+		offer: customer(customer.contract.endDate after "30-Jun-2020")
 	then
         offer.setName("False");
 	end
