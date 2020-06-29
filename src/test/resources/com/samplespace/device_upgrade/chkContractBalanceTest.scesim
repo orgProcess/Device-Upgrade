@@ -56,7 +56,7 @@
           <factAlias>customer</factAlias>
           <expressionAlias>contract.balanceDue</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>224.44179010400254</columnWidth>
+          <columnWidth>385.72587456665616</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -82,7 +82,7 @@
           <factAlias>customer</factAlias>
           <expressionAlias>contract.endDate</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>193.75499527261266</columnWidth>
+          <columnWidth>332.98751969744717</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -105,7 +105,7 @@
           <factAlias>customer</factAlias>
           <expressionAlias>name</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>210.8032146233848</columnWidth>
+          <columnWidth>362.2866057358966</columnWidth>
         </FactMapping>
       </factMappings>
     </scesimModelDescriptor>
@@ -164,6 +164,7 @@
               <name>1593403133649</name>
               <type>EXPECT</type>
             </expressionIdentifier>
+            <rawValue class="string">null</rawValue>
           </FactMappingValue>
         </factMappingValues>
       </Scenario>
