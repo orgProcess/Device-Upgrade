@@ -8,14 +8,14 @@ import java.text.SimpleDateFormat;
 import java.time.temporal.ChronoUnit;
 import java.time.LocalDate;
 
-function boolean chkContractEndDate(String contractEndDate, customer cust) {
+function boolean chkContractEndDate(String contractEndDate) {
     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
     Date passedDate = dateFormat.parse(contractEndDate);
     //upgRes.setIsContractOver(passedDate.after(new Date()));
     return passedDate.after(new Date());
 }
 
-function boolean getBalance(int monthlyPay, String contractEndDate, customer cust) {
+function boolean getBalance(int monthlyPay, String contractEndDate) {
     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
     String currDate = dateFormat.format(new Date());
     Date passedDate = dateFormat.parse(contractEndDate);
@@ -28,7 +28,7 @@ rule "chkBalanceContract"
     ruleflow-group "chkContract"
 	when
 		//offer: customer()
-		offer: customer(chkContractEndDate(customer.contract.endDate, customer), getBalance(customer.contract.monthlyPayment, customer.contract.endDate, customer))
+		offer: customer(chkContractEndDate(customer.contract.endDate), getBalance(customer.contract.monthlyPayment, customer.contract.endDate))
 	then
         offer.setName("False");
 	end
