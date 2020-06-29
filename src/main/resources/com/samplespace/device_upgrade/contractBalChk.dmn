@@ -83,13 +83,13 @@
         <dmn:contextEntry>
           <dmn:variable id="_6B65A10D-2AB1-4F7A-BF62-4EDAD1A51469" name="contractOver" typeRef="boolean"/>
           <dmn:literalExpression id="_3406AA86-FB98-4879-8819-0071A92258B4">
-            <dmn:text>(date(Customer.contract.endDate) > today())</dmn:text>
+            <dmn:text>(date(Customer.contract.endDate) > date("2020-06-29"))</dmn:text>
           </dmn:literalExpression>
         </dmn:contextEntry>
         <dmn:contextEntry>
           <dmn:variable id="_DA2EE596-E834-4B7C-84D8-21E74B46034A" name="rtrDate" typeRef="date"/>
           <dmn:literalExpression id="_EDCE5E25-8EDA-4274-AEA3-A9895958E13C">
-            <dmn:text>now()</dmn:text>
+            <dmn:text>date("2020-06-29")</dmn:text>
           </dmn:literalExpression>
         </dmn:contextEntry>
         <dmn:contextEntry>
