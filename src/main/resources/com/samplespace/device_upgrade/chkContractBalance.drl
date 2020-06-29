@@ -16,6 +16,8 @@ rule "chkBalanceContract"
     ruleflow-group "chkContract"
 	when
 		offer: customer(chkContractEndDate(customer.contract.EndDate))
+		contract: customer.contract();
 	then
 		offer.setPhone("15");
+		
 	end
