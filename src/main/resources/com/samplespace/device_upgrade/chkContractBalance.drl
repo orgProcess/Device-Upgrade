@@ -28,7 +28,7 @@ rule "chkContract"
 	when
 		cc: customer(customer.contract.endDate != null)
 	then
-        if( cc.ruleCheck == null ) {
+        if( cc.ruleCheck != null ) {
           cc.ruleCheck = new custRuleChkRes();    
         }
         
