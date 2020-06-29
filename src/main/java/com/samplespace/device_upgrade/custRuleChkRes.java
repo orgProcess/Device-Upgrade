@@ -8,11 +8,11 @@ public class custRuleChkRes implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Is Contract Over")
+	@org.kie.api.definition.type.Label("Is Contract Over")
 	private java.lang.Boolean isContractOver;
-	@org.kie.api.definition.type.Label(value = "Balance Due")
-	private java.lang.Long balanceDue;
-	@org.kie.api.definition.type.Label(value = "Is Credit Ok")
+	@org.kie.api.definition.type.Label("Balance Due")
+	private Integer balanceDue;
+	@org.kie.api.definition.type.Label("Is Credit Ok")
 	private java.lang.Boolean isCreditOk;
 
 	public custRuleChkRes() {
@@ -26,14 +26,6 @@ public class custRuleChkRes implements java.io.Serializable {
 		this.isContractOver = isContractOver;
 	}
 
-	public java.lang.Long getBalanceDue() {
-		return this.balanceDue;
-	}
-
-	public void setBalanceDue(java.lang.Long balanceDue) {
-		this.balanceDue = balanceDue;
-	}
-
 	public java.lang.Boolean getIsCreditOk() {
 		return this.isCreditOk;
 	}
@@ -42,8 +34,16 @@ public class custRuleChkRes implements java.io.Serializable {
 		this.isCreditOk = isCreditOk;
 	}
 
+	public java.lang.Integer getBalanceDue() {
+		return this.balanceDue;
+	}
+
+	public void setBalanceDue(java.lang.Integer balanceDue) {
+		this.balanceDue = balanceDue;
+	}
+
 	public custRuleChkRes(java.lang.Boolean isContractOver,
-			java.lang.Long balanceDue, java.lang.Boolean isCreditOk) {
+			java.lang.Integer balanceDue, java.lang.Boolean isCreditOk) {
 		this.isContractOver = isContractOver;
 		this.balanceDue = balanceDue;
 		this.isCreditOk = isCreditOk;
