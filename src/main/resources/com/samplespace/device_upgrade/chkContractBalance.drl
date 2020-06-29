@@ -35,6 +35,6 @@ rule "chkContract"
 	then
         //offer.setName("False");
         modify( cc ){
-            getRuleCheck.setIsContractOver(true);
+            getRuleCheck().setIsContractOver(true);
         }
 	end
