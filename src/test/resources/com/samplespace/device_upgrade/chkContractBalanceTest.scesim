@@ -38,7 +38,10 @@
               <step>customer</step>
             </ExpressionElement>
             <ExpressionElement>
-              <step>name</step>
+              <step>contract</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>endDate</step>
             </ExpressionElement>
           </expressionElements>
           <expressionIdentifier>
@@ -51,9 +54,9 @@
           </factIdentifier>
           <className>java.lang.String</className>
           <factAlias>customer</factAlias>
-          <expressionAlias>name</expressionAlias>
+          <expressionAlias>contract.endDate</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>322.0</columnWidth>
+          <columnWidth>540.5</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -76,7 +79,7 @@
           <factAlias>customer</factAlias>
           <expressionAlias>phone</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>322.0</columnWidth>
+          <columnWidth>540.5</columnWidth>
         </FactMapping>
       </factMappings>
     </scesimModelDescriptor>
@@ -124,7 +127,7 @@
               <name>1593392239697</name>
               <type>GIVEN</type>
             </expressionIdentifier>
-            <rawValue class="string">&quot;2020-06-29&quot;</rawValue>
+            <rawValue class="string">2020-06-29</rawValue>
           </FactMappingValue>
         </factMappingValues>
       </Scenario>
