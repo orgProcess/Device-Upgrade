@@ -12,8 +12,11 @@ function boolean chkContractEndDate(String contractEndDate) {
     return passedDate.after(new Date());
 }
 
-function double getBalance(int monthlyPay) {
-    return Math.ceil((double) ChronoUnit.DAYS.between(LocalDate.parse("2020-07-15"), LocalDate.parse("2020-06-01"))/30);
+function double getBalance(int monthlyPay, String contractEndDate) {
+    SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+    String currDate = dateFormat.format(new Date());
+    Date passedDate = dateFormat.parse(contractEndDate);    
+    return Math.ceil((double) ChronoUnit.DAYS.between(LocalDate.parse(currDate), LocalDate.parse(contractEndDate))/30);
 }
 
 rule "chkBalanceContract"
