@@ -93,32 +93,6 @@
               <step>ruleCheck</step>
             </ExpressionElement>
             <ExpressionElement>
-              <step>balanceDue</step>
-            </ExpressionElement>
-          </expressionElements>
-          <expressionIdentifier>
-            <name>1593456020622</name>
-            <type>EXPECT</type>
-          </expressionIdentifier>
-          <factIdentifier>
-            <name>1|1</name>
-            <className>com.samplespace.device_upgrade.customer</className>
-          </factIdentifier>
-          <className>java.lang.Integer</className>
-          <factAlias>customer</factAlias>
-          <expressionAlias>ruleCheck.balanceDue</expressionAlias>
-          <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>209.66666666666666</columnWidth>
-        </FactMapping>
-        <FactMapping>
-          <expressionElements>
-            <ExpressionElement>
-              <step>customer</step>
-            </ExpressionElement>
-            <ExpressionElement>
-              <step>ruleCheck</step>
-            </ExpressionElement>
-            <ExpressionElement>
               <step>isContractOver</step>
             </ExpressionElement>
           </expressionElements>
@@ -192,17 +166,6 @@
             <expressionIdentifier>
               <name>1593456000529</name>
               <type>GIVEN</type>
-            </expressionIdentifier>
-            <rawValue class="string">50</rawValue>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier>
-              <name>1|1</name>
-              <className>com.samplespace.device_upgrade.customer</className>
-            </factIdentifier>
-            <expressionIdentifier>
-              <name>1593456020622</name>
-              <type>EXPECT</type>
             </expressionIdentifier>
             <rawValue class="string">50</rawValue>
           </FactMappingValue>
