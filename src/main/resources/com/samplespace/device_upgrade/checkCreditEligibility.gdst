@@ -232,7 +232,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>[101..300)</valueString>
+        <valueString>(101..300]</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
