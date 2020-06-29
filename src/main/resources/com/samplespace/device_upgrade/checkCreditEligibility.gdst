@@ -9,7 +9,20 @@
     <width>150</width>
   </descriptionCol>
   <metadataCols/>
-  <attributeCols/>
+  <attributeCols>
+    <attribute-column52>
+      <typedDefaultValue>
+        <valueString>checkCreditEligibility</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </typedDefaultValue>
+      <hideColumn>false</hideColumn>
+      <width>100</width>
+      <attribute>ruleflow-group</attribute>
+      <reverseOrder>false</reverseOrder>
+      <useRowNumber>false</useRowNumber>
+    </attribute-column52>
+  </attributeCols>
   <conditionPatterns>
     <Pattern52>
       <factType>String</factType>
@@ -161,6 +174,11 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>checkCreditEligibility</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>Device</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -190,6 +208,11 @@
       </value>
       <value>
         <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>checkCreditEligibility</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -227,6 +250,11 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>checkCreditEligibility</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>Device</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -256,6 +284,11 @@
       </value>
       <value>
         <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>checkCreditEligibility</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -293,6 +326,11 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>checkCreditEligibility</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>Device</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -322,6 +360,11 @@
       </value>
       <value>
         <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>checkCreditEligibility</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -359,6 +402,11 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>checkCreditEligibility</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>Device</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -388,6 +436,11 @@
       </value>
       <value>
         <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>checkCreditEligibility</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -425,6 +478,11 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>checkCreditEligibility</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>Plan</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -454,6 +512,11 @@
       </value>
       <value>
         <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>checkCreditEligibility</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -491,6 +554,11 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>checkCreditEligibility</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>Plan</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -520,6 +588,11 @@
       </value>
       <value>
         <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>checkCreditEligibility</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -557,6 +630,11 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>checkCreditEligibility</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>Plan</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -586,6 +664,11 @@
       </value>
       <value>
         <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>checkCreditEligibility</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
