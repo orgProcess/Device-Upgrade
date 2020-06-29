@@ -30,6 +30,7 @@ rule "chkContract"
 	then
         cc.ruleCheck = new custRuleChkRes();
         cc.ruleCheck.setIsContractOver(chkContractEndDate(cc.contract.endDate));
+        cc.ruleCheck.setBalanceDue(getBalance(cc.contract.monthlyPayment, cc.contract.endDate));
     end
     
     
