@@ -38,11 +38,14 @@
               <step>customer</step>
             </ExpressionElement>
             <ExpressionElement>
-              <step>name</step>
+              <step>contract</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>endDate</step>
             </ExpressionElement>
           </expressionElements>
           <expressionIdentifier>
-            <name>1|1</name>
+            <name>1593392239697</name>
             <type>GIVEN</type>
           </expressionIdentifier>
           <factIdentifier>
@@ -51,9 +54,9 @@
           </factIdentifier>
           <className>java.lang.String</className>
           <factAlias>customer</factAlias>
-          <expressionAlias>name</expressionAlias>
+          <expressionAlias>contract.endDate</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>314.5</columnWidth>
+          <columnWidth>322.0</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -76,7 +79,7 @@
           <factAlias>customer</factAlias>
           <expressionAlias>phone</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>314.5</columnWidth>
+          <columnWidth>322.0</columnWidth>
         </FactMapping>
       </factMappings>
     </scesimModelDescriptor>
@@ -110,10 +113,10 @@
               <className>com.samplespace.device_upgrade.customer</className>
             </factIdentifier>
             <expressionIdentifier>
-              <name>1|1</name>
-              <type>GIVEN</type>
+              <name>1|2</name>
+              <type>EXPECT</type>
             </expressionIdentifier>
-            <rawValue class="string">ApplePay</rawValue>
+            <rawValue class="string">15</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
@@ -121,10 +124,10 @@
               <className>com.samplespace.device_upgrade.customer</className>
             </factIdentifier>
             <expressionIdentifier>
-              <name>1|2</name>
-              <type>EXPECT</type>
+              <name>1593392239697</name>
+              <type>GIVEN</type>
             </expressionIdentifier>
-            <rawValue class="string">15</rawValue>
+            <rawValue class="string">&quot;2020-06-29&quot;</rawValue>
           </FactMappingValue>
         </factMappingValues>
       </Scenario>
