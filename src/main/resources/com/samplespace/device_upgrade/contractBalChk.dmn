@@ -83,7 +83,7 @@
         <dmn:contextEntry>
           <dmn:variable id="_6B65A10D-2AB1-4F7A-BF62-4EDAD1A51469" name="contractOver" typeRef="boolean"/>
           <dmn:literalExpression id="_3406AA86-FB98-4879-8819-0071A92258B4">
-            <dmn:text>(date(Customer.contract.endDate) > Today())</dmn:text>
+            <dmn:text>(date(Customer.contract.endDate) > today())</dmn:text>
           </dmn:literalExpression>
         </dmn:contextEntry>
         <dmn:contextEntry>
