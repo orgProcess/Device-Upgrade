@@ -41,6 +41,32 @@
               <step>contract</step>
             </ExpressionElement>
             <ExpressionElement>
+              <step>monthlyPayment</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1593456000529</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>1|1</name>
+            <className>com.samplespace.device_upgrade.customer</className>
+          </factIdentifier>
+          <className>java.lang.Integer</className>
+          <factAlias>customer</factAlias>
+          <expressionAlias>contract.monthlyPayment</expressionAlias>
+          <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
+          <columnWidth>314.5</columnWidth>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements>
+            <ExpressionElement>
+              <step>customer</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>contract</step>
+            </ExpressionElement>
+            <ExpressionElement>
               <step>endDate</step>
             </ExpressionElement>
           </expressionElements>
@@ -57,6 +83,32 @@
           <expressionAlias>contract.endDate</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
           <columnWidth>332.98751969744717</columnWidth>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements>
+            <ExpressionElement>
+              <step>customer</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>ruleCheck</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>balanceDue</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1593456020622</name>
+            <type>EXPECT</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>1|1</name>
+            <className>com.samplespace.device_upgrade.customer</className>
+          </factIdentifier>
+          <className>java.lang.Integer</className>
+          <factAlias>customer</factAlias>
+          <expressionAlias>ruleCheck.balanceDue</expressionAlias>
+          <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
+          <columnWidth>209.66666666666666</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -119,7 +171,7 @@
               <name>1593392239697</name>
               <type>GIVEN</type>
             </expressionIdentifier>
-            <rawValue class="string">2020-06-29</rawValue>
+            <rawValue class="string">2020-06-30</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
@@ -131,6 +183,28 @@
               <type>EXPECT</type>
             </expressionIdentifier>
             <rawValue class="string">true</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>1|1</name>
+              <className>com.samplespace.device_upgrade.customer</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1593456000529</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">20</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>1|1</name>
+              <className>com.samplespace.device_upgrade.customer</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1593456020622</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">20</rawValue>
           </FactMappingValue>
         </factMappingValues>
       </Scenario>
