@@ -30,18 +30,8 @@ rule "chkContract"
 	when
 		//offer: customer()
 		//offer: customer(chkContractEndDate(customer.contract.endDate), getBalance(customer.contract.monthlyPayment, customer.contract.endDate))
-		offer: customer(customer.contract.endDate after "30-Jun-2020")
+		//offer: customer(customer.contract.endDate after "30-Jun-2020")
+		cc: customer(customer.contract.endDate != null)
 	then
-        offer.setName("False");
-	end
-	
-rule "chkContractA"
-    ruleflow-group "chkContract"
-    dialect "mvel"
-	when
-		//offer: customer()
-		//offer: customer(chkContractEndDate(customer.contract.endDate), getBalance(customer.contract.monthlyPayment, customer.contract.endDate))
-		offer: customer(customer.contract.endDate before "30-Jun-2020")
-	then
-        offer.setName("True");
+        //offer.setName("False");
 	end
