@@ -25,8 +25,8 @@ public class customer implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Contract")
 	private com.samplespace.device_upgrade.contract contract;
 
-	@org.kie.api.definition.type.Label(value = "Customer Result")
-	private com.samplespace.device_upgrade.custRuleChkRes custRuleChkRes;
+	@org.kie.api.definition.type.Label(value = "Customer Rule Check Result")
+	private com.samplespace.device_upgrade.custRuleChkRes ruleCheck;
 
 	public customer() {
 	}
@@ -88,20 +88,20 @@ public class customer implements java.io.Serializable {
 		this.contract = contract;
 	}
 
-	public com.samplespace.device_upgrade.custRuleChkRes getCustRuleChkRes() {
-		return this.custRuleChkRes;
+	public com.samplespace.device_upgrade.custRuleChkRes getRuleCheck() {
+		return this.ruleCheck;
 	}
 
-	public void setCustRuleChkRes(
-			com.samplespace.device_upgrade.custRuleChkRes custRuleChkRes) {
-		this.custRuleChkRes = custRuleChkRes;
+	public void setRuleCheck(
+			com.samplespace.device_upgrade.custRuleChkRes ruleCheck) {
+		this.ruleCheck = ruleCheck;
 	}
 
 	public customer(java.lang.String customerId, java.lang.String name,
 			java.util.Date dob, java.lang.String phone, java.lang.String email,
 			java.util.List<com.samplespace.device_upgrade.address> address,
 			com.samplespace.device_upgrade.contract contract,
-			com.samplespace.device_upgrade.custRuleChkRes custRuleChkRes) {
+			com.samplespace.device_upgrade.custRuleChkRes ruleCheck) {
 		this.customerId = customerId;
 		this.name = name;
 		this.dob = dob;
@@ -109,7 +109,7 @@ public class customer implements java.io.Serializable {
 		this.email = email;
 		this.address = address;
 		this.contract = contract;
-		this.custRuleChkRes = custRuleChkRes;
+		this.ruleCheck = ruleCheck;
 	}
 
 }
