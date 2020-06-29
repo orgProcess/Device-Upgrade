@@ -24,11 +24,22 @@ function boolean getBalance(int monthlyPay, String contractEndDate) {
     return true;
 }
 
-rule "chkBalanceContract"
+rule "chkContract"
     ruleflow-group "chkContract"
 	when
 		//offer: customer()
-		offer: customer(chkContractEndDate(customer.contract.endDate), getBalance(customer.contract.monthlyPayment, customer.contract.endDate))
+		//offer: customer(chkContractEndDate(customer.contract.endDate), getBalance(customer.contract.monthlyPayment, customer.contract.endDate))
+		offer: customer(customer.contract.endDate after new Date())
 	then
         offer.setName("False");
+	end
+	
+rule "chkContractA"
+    ruleflow-group "chkContract"
+	when
+		//offer: customer()
+		//offer: customer(chkContractEndDate(customer.contract.endDate), getBalance(customer.contract.monthlyPayment, customer.contract.endDate))
+		offer: customer(customer.contract.endDate before "30-Jun-2020")
+	then
+        offer.setName("True");
 	end
