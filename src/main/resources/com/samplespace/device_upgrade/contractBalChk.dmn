@@ -87,6 +87,12 @@
           </dmn:literalExpression>
         </dmn:contextEntry>
         <dmn:contextEntry>
+          <dmn:variable id="_DA2EE596-E834-4B7C-84D8-21E74B46034A" name="rtrDate" typeRef="date"/>
+          <dmn:literalExpression id="_EDCE5E25-8EDA-4274-AEA3-A9895958E13C">
+            <dmn:text>now()</dmn:text>
+          </dmn:literalExpression>
+        </dmn:contextEntry>
+        <dmn:contextEntry>
           <dmn:variable id="_F37D5E82-0482-4497-84DE-05A75215C9F6" name="accBalance" typeRef="number"/>
           <dmn:literalExpression id="_F1819851-3BBB-457F-AAD5-FA0F2353EFE7">
             <dmn:text>100</dmn:text>
@@ -94,7 +100,7 @@
         </dmn:contextEntry>
         <dmn:contextEntry>
           <dmn:literalExpression id="_580BF8EE-2F12-414A-B30B-B66952F97422">
-            <dmn:text>{ "contractOver": contractOver, "accBalance": accBalance, rtDate: date("2020-06-28")}</dmn:text>
+            <dmn:text>{ "contractOver": contractOver, "accBalance": accBalance, rtDate: rtrDate}</dmn:text>
           </dmn:literalExpression>
         </dmn:contextEntry>
       </dmn:context>
@@ -113,6 +119,9 @@
             <kie:width>786.0</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_3406AA86-FB98-4879-8819-0071A92258B4">
+            <kie:width>786.0</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_EDCE5E25-8EDA-4274-AEA3-A9895958E13C">
             <kie:width>786.0</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_F1819851-3BBB-457F-AAD5-FA0F2353EFE7">
