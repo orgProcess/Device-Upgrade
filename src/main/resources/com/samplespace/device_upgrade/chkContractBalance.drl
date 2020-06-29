@@ -3,6 +3,7 @@ package com.samplespace.device_upgrade;
 import com.samplespace.device_upgrade.customer;
 import java.util.Date;
 import java.text.SimpleDateFormat;
+import java.time.temporal.ChronoUnit;
 
 function boolean chkContractEndDate(String contractEndDate) {
     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
@@ -10,14 +11,15 @@ function boolean chkContractEndDate(String contractEndDate) {
     return passedDate.after(new Date());
 }
 
-
+function double getBalance(int monthlyPay) {
+    return Math.ceil((double) ChronoUnit.DAYS.between(LocalDate.parse("2020-07-15"), LocalDate.parse("2020-06-01"))/30);
+}
 
 rule "chkBalanceContract"
     ruleflow-group "chkContract"
 	when
-		offer: customer(chkContractEndDate(customer.contract.EndDate))
-
+		offer: customer(chkContractEndDate(customer.contract.endDate))
+        
 	then
 		offer.setPhone("15");
-		
 	end
