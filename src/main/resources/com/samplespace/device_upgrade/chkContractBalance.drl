@@ -32,9 +32,18 @@ rule "chkContract"
 		//offer: customer(chkContractEndDate(customer.contract.endDate), getBalance(customer.contract.monthlyPayment, customer.contract.endDate))
 		//offer: customer(customer.contract.endDate after "30-Jun-2020")
 		cc: customer(customer.contract.endDate != null)
+		//dd: cc.ruleCheck(balanceDue == null)
 	then
-        //offer.setName("False");
-        modify( cc ){
-            getRuleCheck.setIsContractOver(true);
-        }
-	end
+        //custRuleChkRes crcr = new custRuleChkRes();
+        //cc.addCustRuleChkRes(crcr);
+        cc.ruleCheck = new custRuleChkRes();
+        modify (cc) {
+            getRuleCheck().setIsContractOver(true);
+         }
+    end
+    
+    
+    
+    
+    
+    
