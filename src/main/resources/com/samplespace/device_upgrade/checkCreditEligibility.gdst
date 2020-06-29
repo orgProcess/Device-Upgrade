@@ -2,15 +2,44 @@
   <tableName>checkCreditEligibility</tableName>
   <rowNumberCol>
     <hideColumn>false</hideColumn>
-    <width>-1</width>
+    <width>50</width>
   </rowNumberCol>
   <descriptionCol>
     <hideColumn>false</hideColumn>
-    <width>-1</width>
+    <width>150</width>
   </descriptionCol>
   <metadataCols/>
   <attributeCols/>
-  <conditionPatterns/>
+  <conditionPatterns>
+    <Pattern52>
+      <factType>String</factType>
+      <boundName>UpgradeType</boundName>
+      <isNegated>false</isNegated>
+      <conditions>
+        <condition-column52>
+          <typedDefaultValue>
+            <valueString></valueString>
+            <dataType>STRING</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>false</hideColumn>
+          <width>414</width>
+          <header>Type</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>this</factField>
+          <fieldType>String</fieldType>
+          <operator>==</operator>
+          <valueList>Device,Plan</valueList>
+          <parameters/>
+          <binding></binding>
+        </condition-column52>
+      </conditions>
+      <window>
+        <parameters/>
+      </window>
+      <entryPointName></entryPointName>
+    </Pattern52>
+  </conditionPatterns>
   <actionCols/>
   <auditLog>
     <filter class="org.drools.guvnor.client.modeldriven.dt52.auditlog.DecisionTableAuditLogFilter">
@@ -40,10 +69,33 @@
     <entries/>
   </auditLog>
   <imports>
-    <imports/>
+    <imports>
+      <org.kie.soup.project.datamodel.imports.Import>
+        <type>java.lang.String</type>
+      </org.kie.soup.project.datamodel.imports.Import>
+    </imports>
   </imports>
   <packageName>com.samplespace.device_upgrade</packageName>
   <tableFormat>EXTENDED_ENTRY</tableFormat>
   <hitPolicy>NONE</hitPolicy>
-  <data/>
+  <data>
+    <list>
+      <value>
+        <valueNumeric class="int">1</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>Plan</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+  </data>
 </decision-table52>
