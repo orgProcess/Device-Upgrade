@@ -24,6 +24,9 @@ public class contract implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Monthly Payment")
 	private java.lang.Integer monthlyPayment;
 
+	@org.kie.api.definition.type.Label(value = "Balance Due")
+	private java.lang.Integer balanceDue;
+
 	public contract() {
 	}
 
@@ -75,15 +78,25 @@ public class contract implements java.io.Serializable {
 		this.endDate = endDate;
 	}
 
+	public java.lang.Integer getBalanceDue() {
+		return this.balanceDue;
+	}
+
+	public void setBalanceDue(java.lang.Integer balanceDue) {
+		this.balanceDue = balanceDue;
+	}
+
 	public contract(java.lang.String type, java.lang.String name,
 			java.lang.String startDate, java.lang.String endDate,
-			java.lang.String details, java.lang.Integer monthlyPayment) {
+			java.lang.String details, java.lang.Integer monthlyPayment,
+			java.lang.Integer balanceDue) {
 		this.type = type;
 		this.name = name;
 		this.startDate = startDate;
 		this.endDate = endDate;
 		this.details = details;
 		this.monthlyPayment = monthlyPayment;
+		this.balanceDue = balanceDue;
 	}
 
 }
