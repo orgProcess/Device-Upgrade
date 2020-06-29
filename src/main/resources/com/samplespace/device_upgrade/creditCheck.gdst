@@ -40,6 +40,28 @@
           <parameters/>
           <binding>rt</binding>
         </condition-column52>
+        <condition-column52>
+          <hideColumn>false</hideColumn>
+          <width>100</width>
+          <header>Initial Payment</header>
+          <constraintValueType>3</constraintValueType>
+          <factField>initialPayment</factField>
+          <fieldType>Integer</fieldType>
+          <operator></operator>
+          <parameters/>
+          <binding>ip</binding>
+        </condition-column52>
+        <condition-column52>
+          <hideColumn>false</hideColumn>
+          <width>100</width>
+          <header>Credit Score</header>
+          <constraintValueType>3</constraintValueType>
+          <factField>creditScore</factField>
+          <fieldType>Integer</fieldType>
+          <operator></operator>
+          <parameters/>
+          <binding>cs</binding>
+        </condition-column52>
       </conditions>
       <window>
         <parameters/>
@@ -120,6 +142,16 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueBoolean>true</valueBoolean>
         <valueString></valueString>
         <dataType>BOOLEAN</dataType>
@@ -145,6 +177,16 @@
       </value>
       <value>
         <valueString>Plan</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
