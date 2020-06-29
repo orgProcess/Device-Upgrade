@@ -15,7 +15,7 @@ function boolean chkContractEndDate(String contractEndDate){
 rule "chkBalanceContract"
     ruleflow-group "chkContract"
 	when
-		offer: customer(chkContractEndDate(contract.endDate))
+		offer: customer(chkContractEndDate(customer.contract.endDate))
 	then
 		offer.setPhone("15");
 	end
