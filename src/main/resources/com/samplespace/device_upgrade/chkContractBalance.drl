@@ -26,6 +26,7 @@ function boolean getBalance(int monthlyPay, String contractEndDate) {
 
 rule "chkContract"
     ruleflow-group "chkContract"
+    dialect "mvel"
 	when
 		//offer: customer()
 		//offer: customer(chkContractEndDate(customer.contract.endDate), getBalance(customer.contract.monthlyPayment, customer.contract.endDate))
@@ -36,6 +37,7 @@ rule "chkContract"
 	
 rule "chkContractA"
     ruleflow-group "chkContract"
+    dialect "mvel"
 	when
 		//offer: customer()
 		//offer: customer(chkContractEndDate(customer.contract.endDate), getBalance(customer.contract.monthlyPayment, customer.contract.endDate))
