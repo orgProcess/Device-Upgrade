@@ -25,6 +25,9 @@ public class customer implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Contract")
 	private com.samplespace.device_upgrade.contract contract;
 
+	@org.kie.api.definition.type.Label(value = "Customer Result")
+	private com.samplespace.device_upgrade.custRuleChkRes custRuleChkRes;
+
 	public customer() {
 	}
 
@@ -85,10 +88,20 @@ public class customer implements java.io.Serializable {
 		this.contract = contract;
 	}
 
+	public com.samplespace.device_upgrade.custRuleChkRes getCustRuleChkRes() {
+		return this.custRuleChkRes;
+	}
+
+	public void setCustRuleChkRes(
+			com.samplespace.device_upgrade.custRuleChkRes custRuleChkRes) {
+		this.custRuleChkRes = custRuleChkRes;
+	}
+
 	public customer(java.lang.String customerId, java.lang.String name,
 			java.util.Date dob, java.lang.String phone, java.lang.String email,
 			java.util.List<com.samplespace.device_upgrade.address> address,
-			com.samplespace.device_upgrade.contract contract) {
+			com.samplespace.device_upgrade.contract contract,
+			com.samplespace.device_upgrade.custRuleChkRes custRuleChkRes) {
 		this.customerId = customerId;
 		this.name = name;
 		this.dob = dob;
@@ -96,6 +109,7 @@ public class customer implements java.io.Serializable {
 		this.email = email;
 		this.address = address;
 		this.contract = contract;
+		this.custRuleChkRes = custRuleChkRes;
 	}
 
 }
