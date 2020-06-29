@@ -14,12 +14,12 @@ function boolean chkContractEndDate(String contractEndDate) {
     return passedDate.after(new Date());
 }
 
-function boolean getBalance(int monthlyPay, String contractEndDate) {
+function int getBalance(int monthlyPay, String contractEndDate) {
     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-    String currDate = dateFormat.format(new Date());
+    String currDate = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
     Date passedDate = dateFormat.parse(contractEndDate);
-    int accBalance = (int) (Math.ceil((double) ChronoUnit.DAYS.between(LocalDate.parse(currDate), LocalDate.parse(contractEndDate))/30) * monthlyPay);
-    return true;
+    return (int) (Math.ceil((double) ChronoUnit.DAYS.between(LocalDate.parse(currDate), LocalDate.parse(contractEndDate))/30) * monthlyPay);
+
 }
 
 rule "chkContract"
@@ -30,9 +30,6 @@ rule "chkContract"
 	then
         cc.ruleCheck = new custRuleChkRes();
         cc.ruleCheck.setIsContractOver(chkContractEndDate(cc.contract.endDate));
-        //modify (cc) {
-            //ruleCheck.setIsContractOver(true);
-        //}
     end
     
     
