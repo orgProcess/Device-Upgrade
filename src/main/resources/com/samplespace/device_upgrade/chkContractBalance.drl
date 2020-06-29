@@ -4,6 +4,7 @@ import com.samplespace.device_upgrade.customer;
 import java.util.Date;
 import java.text.SimpleDateFormat;
 import java.time.temporal.ChronoUnit;
+import java.time.LocalDate;
 
 function boolean chkContractEndDate(String contractEndDate) {
     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
