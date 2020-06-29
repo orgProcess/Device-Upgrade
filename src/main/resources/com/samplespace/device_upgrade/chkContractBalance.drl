@@ -4,7 +4,7 @@ import com.samplespace.device_upgrade.customer;
 import java.util.Date;
 import java.text.SimpleDateFormat;
 
-function boolean chkContractEndDate(String contractEndDate){
+function boolean chkContractEndDate(String contractEndDate) {
     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
     Date passedDate = dateFormat.parse(contractEndDate);
     return passedDate.after(new Date());
@@ -16,7 +16,7 @@ rule "chkBalanceContract"
     ruleflow-group "chkContract"
 	when
 		offer: customer(chkContractEndDate(customer.contract.EndDate))
-		pay: offer.contract.monthlyPayment
+
 	then
 		offer.setPhone("15");
 		
