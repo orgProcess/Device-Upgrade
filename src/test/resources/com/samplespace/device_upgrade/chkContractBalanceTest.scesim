@@ -64,7 +64,10 @@
               <step>customer</step>
             </ExpressionElement>
             <ExpressionElement>
-              <step>name</step>
+              <step>ruleCheck</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>isContractOver</step>
             </ExpressionElement>
           </expressionElements>
           <expressionIdentifier>
@@ -75,9 +78,9 @@
             <name>1|1</name>
             <className>com.samplespace.device_upgrade.customer</className>
           </factIdentifier>
-          <className>java.lang.String</className>
+          <className>java.lang.Boolean</className>
           <factAlias>customer</factAlias>
-          <expressionAlias>name</expressionAlias>
+          <expressionAlias>ruleCheck.isContractOver</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
           <columnWidth>362.2866057358966</columnWidth>
         </FactMapping>
@@ -127,7 +130,7 @@
               <name>1593403133649</name>
               <type>EXPECT</type>
             </expressionIdentifier>
-            <rawValue class="string">null</rawValue>
+            <rawValue class="string">true</rawValue>
           </FactMappingValue>
         </factMappingValues>
       </Scenario>
