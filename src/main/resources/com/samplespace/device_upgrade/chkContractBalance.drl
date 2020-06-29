@@ -34,7 +34,7 @@ rule "chkContract"
 		cc: customer(customer.contract.endDate != null)
 	then
         //offer.setName("False");
-        modify( cc.ruleCheck ){
-            setIsContractOver(true);
+        modify( cc ){
+            getRuleCheck.setIsContractOver(true);
         }
 	end
