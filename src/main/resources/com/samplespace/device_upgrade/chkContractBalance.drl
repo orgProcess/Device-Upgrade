@@ -12,17 +12,18 @@ function boolean chkContractEndDate(String contractEndDate) {
     return passedDate.after(new Date());
 }
 
-function double getBalance(int monthlyPay, String contractEndDate) {
+function boolean getBalance(int monthlyPay, String contractEndDate) {
     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
     String currDate = dateFormat.format(new Date());
     Date passedDate = dateFormat.parse(contractEndDate);    
-    return Math.ceil((double) ChronoUnit.DAYS.between(LocalDate.parse(currDate), LocalDate.parse(contractEndDate))/30) * monthlyPay;
+    //return Math.ceil((double) ChronoUnit.DAYS.between(LocalDate.parse(currDate), LocalDate.parse(contractEndDate))/30) * monthlyPay;
+    return true;
 }
 
 rule "chkBalanceContract"
     ruleflow-group "chkContract"
 	when
-		offer: customer(chkContractEndDate(customer.contract.endDate))
+		offer: customer(chkContractEndDate(customer.contract.endDate), getBalance(customer.contract.monthlyPayment, customer.contract.endDate))
 	then
 		offer.setPhone("15");
 	end
