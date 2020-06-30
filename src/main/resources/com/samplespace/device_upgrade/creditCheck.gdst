@@ -47,15 +47,36 @@
           <binding>rt</binding>
         </condition-column52>
         <condition-column52>
+          <typedDefaultValue>
+            <valueString></valueString>
+            <dataType>STRING</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
           <hideColumn>false</hideColumn>
-          <width>100</width>
-          <header>Initial Payment</header>
+          <width>190</width>
+          <header>Min Initial Payment</header>
           <constraintValueType>3</constraintValueType>
           <factField>initialPayment</factField>
           <fieldType>Integer</fieldType>
-          <operator></operator>
+          <operator>&gt;=</operator>
           <parameters/>
-          <binding>ip</binding>
+          <binding></binding>
+        </condition-column52>
+        <condition-column52>
+          <typedDefaultValue>
+            <valueString></valueString>
+            <dataType>STRING</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>false</hideColumn>
+          <width>241</width>
+          <header>Max Initial Payment</header>
+          <constraintValueType>3</constraintValueType>
+          <factField>initialPayment</factField>
+          <fieldType>Integer</fieldType>
+          <operator>&lt;=</operator>
+          <parameters/>
+          <binding></binding>
         </condition-column52>
         <condition-column52>
           <hideColumn>false</hideColumn>
@@ -148,7 +169,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>[0..100)</valueString>
+        <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>100</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -187,7 +213,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>[0..100)</valueString>
+        <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>100</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -226,7 +257,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>[101..300)</valueString>
+        <valueString>101</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>300</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -265,7 +301,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>[101..300)</valueString>
+        <valueString>101</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>300</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -304,7 +345,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>[201..500)</valueString>
+        <valueString>201</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>500</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -343,7 +389,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>[201..500)</valueString>
+        <valueString>201</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>500</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -382,7 +433,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>[501..2000)</valueString>
+        <valueString>501</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>2000</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -421,7 +477,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>[501..2000)</valueString>
+        <valueString>501</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>2000</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -456,6 +517,11 @@
       </value>
       <value>
         <valueString>Plan</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>20</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -504,6 +570,11 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>20</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>&lt; 550</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -534,6 +605,11 @@
       </value>
       <value>
         <valueString>Plan</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>40</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -582,6 +658,11 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>40</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>&lt; 650</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -621,6 +702,11 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>100</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>&gt; 750</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -651,6 +737,11 @@
       </value>
       <value>
         <valueString>Plan</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>100</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
