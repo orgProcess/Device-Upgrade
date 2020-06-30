@@ -83,7 +83,7 @@
         <isOtherwise>false</isOtherwise>
       </typedDefaultValue>
       <hideColumn>false</hideColumn>
-      <width>718</width>
+      <width>240</width>
       <header>CreditOk</header>
       <boundName>CRCS</boundName>
       <factField>isCreditOk</factField>
@@ -460,7 +460,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>[0..20)</valueString>
+        <valueString>20</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -499,7 +499,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>[0..20)</valueString>
+        <valueString>20</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -538,7 +538,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>[21..40)</valueString>
+        <valueString>40</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -577,7 +577,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>[21..40)</valueString>
+        <valueString>40</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -616,7 +616,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>[41..500)</valueString>
+        <valueString>100</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -655,7 +655,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>[41..500)</valueString>
+        <valueString>100</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
