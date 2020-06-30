@@ -521,7 +521,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>20</valueString>
+        <valueString>0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -565,7 +565,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>20</valueString>
+        <valueString>0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -609,7 +609,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>40</valueString>
+        <valueString>21</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -653,7 +653,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>40</valueString>
+        <valueString>21</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -697,7 +697,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>100</valueString>
+        <valueString>41</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -741,7 +741,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>100</valueString>
+        <valueString>41</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
