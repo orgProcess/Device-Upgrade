@@ -702,7 +702,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>100</valueString>
+        <valueString>500</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -746,7 +746,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>100</valueString>
+        <valueString>500</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
