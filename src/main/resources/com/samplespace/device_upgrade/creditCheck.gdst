@@ -616,7 +616,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>[41..60)</valueString>
+        <valueString>[41..500)</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -655,7 +655,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>[41..60)</valueString>
+        <valueString>[41..500)</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
