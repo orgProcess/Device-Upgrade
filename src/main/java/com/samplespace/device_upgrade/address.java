@@ -22,9 +22,6 @@ public class address implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Type")
 	private String type;
 
-	@org.kie.api.definition.type.Label(value = "test1")
-	private java.lang.String test1;
-
 	public address() {
 	}
 
@@ -76,25 +73,15 @@ public class address implements java.io.Serializable {
 		this.type = type;
 	}
 
-	public java.lang.String getTest1() {
-		return this.test1;
-	}
-
-	public void setTest1(java.lang.String test1) {
-		this.test1 = test1;
-	}
-
 	public address(java.lang.String address1, java.lang.String address2,
 			java.lang.String city, java.lang.String state,
-			java.lang.String postCode, java.lang.String type,
-			java.lang.String test1) {
+			java.lang.String postCode, java.lang.String type) {
 		this.address1 = address1;
 		this.address2 = address2;
 		this.city = city;
 		this.state = state;
 		this.postCode = postCode;
 		this.type = type;
-		this.test1 = test1;
 	}
 
 }
