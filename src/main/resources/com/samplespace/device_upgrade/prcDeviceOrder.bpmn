@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_vR_kYLyeEeqA__pZ7bnQIA" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
+<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_3BKPgLyeEeqA__pZ7bnQIA" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
   <bpmn2:itemDefinition id="_CustomerItem" structureRef="com.samplespace.device_upgrade.customer"/>
   <bpmn2:itemDefinition id="__C9A2C5DB-835F-4DDA-B9C5-FEDAFB7BF439_namespaceInputXItem" structureRef="java.lang.String"/>
   <bpmn2:itemDefinition id="__C9A2C5DB-835F-4DDA-B9C5-FEDAFB7BF439_modelInputXItem" structureRef="java.lang.String"/>
@@ -149,38 +149,38 @@ kcontext.setVariable("Customer", cust);
       </bpmn2:extensionElements>
       <bpmn2:incoming>_E61A7C22-EA09-4828-934A-FE86FEF35BEB</bpmn2:incoming>
       <bpmn2:outgoing>_DCF2BADE-9A2E-4F30-ADF6-F70874B5A72F</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_vR_kYbyeEeqA__pZ7bnQIA">
+      <bpmn2:ioSpecification id="_3BK2kLyeEeqA__pZ7bnQIA">
         <bpmn2:dataInput id="_5D57A19D-4B7C-40DC-8BDF-E86E3B12A96E_TaskNameInputX" drools:dtype="Object" itemSubjectRef="__5D57A19D-4B7C-40DC-8BDF-E86E3B12A96E_TaskNameInputXItem" name="TaskName"/>
         <bpmn2:dataInput id="_5D57A19D-4B7C-40DC-8BDF-E86E3B12A96E_CustomerInputX" drools:dtype="com.samplespace.device_upgrade.customer" itemSubjectRef="__5D57A19D-4B7C-40DC-8BDF-E86E3B12A96E_CustomerInputXItem" name="Customer"/>
         <bpmn2:dataInput id="_5D57A19D-4B7C-40DC-8BDF-E86E3B12A96E_SkippableInputX" drools:dtype="Object" itemSubjectRef="__5D57A19D-4B7C-40DC-8BDF-E86E3B12A96E_SkippableInputXItem" name="Skippable"/>
-        <bpmn2:inputSet id="_vR_kYryeEeqA__pZ7bnQIA">
+        <bpmn2:inputSet id="_3BK2kbyeEeqA__pZ7bnQIA">
           <bpmn2:dataInputRefs>_5D57A19D-4B7C-40DC-8BDF-E86E3B12A96E_TaskNameInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_5D57A19D-4B7C-40DC-8BDF-E86E3B12A96E_CustomerInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_5D57A19D-4B7C-40DC-8BDF-E86E3B12A96E_SkippableInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:outputSet id="_vR_kY7yeEeqA__pZ7bnQIA"/>
+        <bpmn2:outputSet id="_3BK2kryeEeqA__pZ7bnQIA"/>
       </bpmn2:ioSpecification>
-      <bpmn2:dataInputAssociation id="_vR_kZLyeEeqA__pZ7bnQIA">
+      <bpmn2:dataInputAssociation id="_3BK2k7yeEeqA__pZ7bnQIA">
         <bpmn2:targetRef>_5D57A19D-4B7C-40DC-8BDF-E86E3B12A96E_TaskNameInputX</bpmn2:targetRef>
-        <bpmn2:assignment id="_vR_kZbyeEeqA__pZ7bnQIA">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_vR_kZryeEeqA__pZ7bnQIA"><![CDATA[AddUpgradeService]]></bpmn2:from>
-          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_vR_kZ7yeEeqA__pZ7bnQIA">_5D57A19D-4B7C-40DC-8BDF-E86E3B12A96E_TaskNameInputX</bpmn2:to>
+        <bpmn2:assignment id="_3BK2lLyeEeqA__pZ7bnQIA">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_3BK2lbyeEeqA__pZ7bnQIA"><![CDATA[AddUpgradeService]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_3BK2lryeEeqA__pZ7bnQIA">_5D57A19D-4B7C-40DC-8BDF-E86E3B12A96E_TaskNameInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_vR_kaLyeEeqA__pZ7bnQIA">
+      <bpmn2:dataInputAssociation id="_3BK2l7yeEeqA__pZ7bnQIA">
         <bpmn2:sourceRef>Customer</bpmn2:sourceRef>
         <bpmn2:targetRef>_5D57A19D-4B7C-40DC-8BDF-E86E3B12A96E_CustomerInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_vR_kabyeEeqA__pZ7bnQIA">
+      <bpmn2:dataInputAssociation id="_3BK2mLyeEeqA__pZ7bnQIA">
         <bpmn2:targetRef>_5D57A19D-4B7C-40DC-8BDF-E86E3B12A96E_SkippableInputX</bpmn2:targetRef>
-        <bpmn2:assignment id="_vR_karyeEeqA__pZ7bnQIA">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_vR_ka7yeEeqA__pZ7bnQIA"><![CDATA[false]]></bpmn2:from>
-          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_vR_kbLyeEeqA__pZ7bnQIA">_5D57A19D-4B7C-40DC-8BDF-E86E3B12A96E_SkippableInputX</bpmn2:to>
+        <bpmn2:assignment id="_3BK2mbyeEeqA__pZ7bnQIA">
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_3BK2mryeEeqA__pZ7bnQIA"><![CDATA[false]]></bpmn2:from>
+          <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_3BK2m7yeEeqA__pZ7bnQIA">_5D57A19D-4B7C-40DC-8BDF-E86E3B12A96E_SkippableInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
-      <bpmn2:potentialOwner id="_95d039ae-d4ce-4210-b336-7374368dceea">
-        <bpmn2:resourceAssignmentExpression id="_vSALcLyeEeqA__pZ7bnQIA">
-          <bpmn2:formalExpression id="_vSALcbyeEeqA__pZ7bnQIA">pamAdmin</bpmn2:formalExpression>
+      <bpmn2:potentialOwner id="_26e4d643-3ef5-4c62-8d68-eca9a7aa7c5e">
+        <bpmn2:resourceAssignmentExpression id="_3BK2nLyeEeqA__pZ7bnQIA">
+          <bpmn2:formalExpression id="_3BK2nbyeEeqA__pZ7bnQIA">pamAdmin</bpmn2:formalExpression>
         </bpmn2:resourceAssignmentExpression>
       </bpmn2:potentialOwner>
     </bpmn2:userTask>
@@ -205,7 +205,7 @@ kcontext.setVariable("Customer", cust);
     <bpmn2:startEvent id="_181ADED6-8348-4757-A394-E939B0ABA9C8">
       <bpmn2:outgoing>_16A5A48B-4F83-47AA-868F-D10395DA0A52</bpmn2:outgoing>
     </bpmn2:startEvent>
-    <bpmn2:businessRuleTask id="_C9A2C5DB-835F-4DDA-B9C5-FEDAFB7BF439" drools:ruleFlowGroup="" name="Validate Credit Score" implementation="http://www.jboss.org/drools/rule">
+    <bpmn2:businessRuleTask id="_C9A2C5DB-835F-4DDA-B9C5-FEDAFB7BF439" drools:ruleFlowGroup="valCredScore" name="Validate Credit Score" implementation="http://www.jboss.org/drools/rule">
       <bpmn2:extensionElements>
         <drools:metaData name="elementname">
           <drools:metaValue><![CDATA[Validate Credit Score]]></drools:metaValue>
@@ -224,8 +224,8 @@ kcontext.setVariable("Customer", cust);
       <bpmn2:outgoing>_B5D5AF50-60CD-46B6-94F0-65391E361E16</bpmn2:outgoing>
     </bpmn2:task>
   </bpmn2:process>
-  <bpmndi:BPMNDiagram id="_vSALcryeEeqA__pZ7bnQIA">
-    <bpmndi:BPMNPlane id="_vSALc7yeEeqA__pZ7bnQIA" bpmnElement="Device-Upgrade.prcDeviceOrder">
+  <bpmndi:BPMNDiagram id="_3BK2nryeEeqA__pZ7bnQIA">
+    <bpmndi:BPMNPlane id="_3BK2n7yeEeqA__pZ7bnQIA" bpmnElement="Device-Upgrade.prcDeviceOrder">
       <bpmndi:BPMNShape id="shape__C32A983A-524A-42EE-8041-BB78D67A9365" bpmnElement="_C32A983A-524A-42EE-8041-BB78D67A9365">
         <dc:Bounds height="102.0" width="154.0" x="1114.0" y="169.0"/>
       </bpmndi:BPMNShape>
@@ -294,12 +294,12 @@ kcontext.setVariable("Customer", cust);
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
-  <bpmn2:relationship id="_vSALdLyeEeqA__pZ7bnQIA" type="BPSimData">
+  <bpmn2:relationship id="_3BK2oLyeEeqA__pZ7bnQIA" type="BPSimData">
     <bpmn2:extensionElements>
       <bpsim:BPSimData>
         <bpsim:Scenario xsi:type="bpsim:Scenario" id="default" name="Simulationscenario">
           <bpsim:ScenarioParameters xsi:type="bpsim:ScenarioParameters"/>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_C32A983A-524A-42EE-8041-BB78D67A9365" id="_vSALdbyeEeqA__pZ7bnQIA">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_C32A983A-524A-42EE-8041-BB78D67A9365" id="_3BK2obyeEeqA__pZ7bnQIA">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -319,7 +319,7 @@ kcontext.setVariable("Customer", cust);
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_C9A2C5DB-835F-4DDA-B9C5-FEDAFB7BF439" id="_vSALdryeEeqA__pZ7bnQIA">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_C9A2C5DB-835F-4DDA-B9C5-FEDAFB7BF439" id="_3BK2oryeEeqA__pZ7bnQIA">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -339,34 +339,14 @@ kcontext.setVariable("Customer", cust);
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_181ADED6-8348-4757-A394-E939B0ABA9C8" id="_vSALd7yeEeqA__pZ7bnQIA">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_181ADED6-8348-4757-A394-E939B0ABA9C8" id="_3BK2o7yeEeqA__pZ7bnQIA">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
               </bpsim:ProcessingTime>
             </bpsim:TimeParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_C06C6ED3-41EB-4AC9-87EB-DF54B9981926" id="_vSALeLyeEeqA__pZ7bnQIA">
-            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
-              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
-                <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
-              </bpsim:ProcessingTime>
-            </bpsim:TimeParameters>
-            <bpsim:ResourceParameters xsi:type="bpsim:ResourceParameters">
-              <bpsim:Availability xsi:type="bpsim:Parameter">
-                <bpsim:FloatingParameter value="0.0"/>
-              </bpsim:Availability>
-              <bpsim:Quantity xsi:type="bpsim:Parameter">
-                <bpsim:FloatingParameter value="0.0"/>
-              </bpsim:Quantity>
-            </bpsim:ResourceParameters>
-            <bpsim:CostParameters xsi:type="bpsim:CostParameters">
-              <bpsim:UnitCost xsi:type="bpsim:Parameter">
-                <bpsim:FloatingParameter value="0.0"/>
-              </bpsim:UnitCost>
-            </bpsim:CostParameters>
-          </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_5D57A19D-4B7C-40DC-8BDF-E86E3B12A96E" id="_vSALebyeEeqA__pZ7bnQIA">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_C06C6ED3-41EB-4AC9-87EB-DF54B9981926" id="_3BK2pLyeEeqA__pZ7bnQIA">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -386,7 +366,7 @@ kcontext.setVariable("Customer", cust);
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_793FCBBF-E832-40F6-84E5-37F5270913DC" id="_vSALeryeEeqA__pZ7bnQIA">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_5D57A19D-4B7C-40DC-8BDF-E86E3B12A96E" id="_3BK2pbyeEeqA__pZ7bnQIA">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -406,7 +386,27 @@ kcontext.setVariable("Customer", cust);
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_F972B867-2E65-4751-83F8-A389BBCB7DEE" id="_vSALe7yeEeqA__pZ7bnQIA">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_793FCBBF-E832-40F6-84E5-37F5270913DC" id="_3BK2pryeEeqA__pZ7bnQIA">
+            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
+              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
+                <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:ResourceParameters xsi:type="bpsim:ResourceParameters">
+              <bpsim:Availability xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Availability>
+              <bpsim:Quantity xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Quantity>
+            </bpsim:ResourceParameters>
+            <bpsim:CostParameters xsi:type="bpsim:CostParameters">
+              <bpsim:UnitCost xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_F972B867-2E65-4751-83F8-A389BBCB7DEE" id="_3BK2p7yeEeqA__pZ7bnQIA">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -429,7 +429,7 @@ kcontext.setVariable("Customer", cust);
         </bpsim:Scenario>
       </bpsim:BPSimData>
     </bpmn2:extensionElements>
-    <bpmn2:source>_vR_kYLyeEeqA__pZ7bnQIA</bpmn2:source>
-    <bpmn2:target>_vR_kYLyeEeqA__pZ7bnQIA</bpmn2:target>
+    <bpmn2:source>_3BKPgLyeEeqA__pZ7bnQIA</bpmn2:source>
+    <bpmn2:target>_3BKPgLyeEeqA__pZ7bnQIA</bpmn2:target>
   </bpmn2:relationship>
 </bpmn2:definitions>
