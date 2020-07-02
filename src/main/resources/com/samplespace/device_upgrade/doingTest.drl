@@ -1,2 +1,51 @@
 package com.samplespace.device_upgrade;
 
+import com.samplespace.device_upgrade.customer;
+
+
+import java.util.Date;
+import java.text.SimpleDateFormat;
+import java.time.temporal.ChronoUnit;
+import java.time.LocalDate;
+
+function boolean chkContractEndDate(String contractEndDate) {
+    SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+    Date passedDate = dateFormat.parse(contractEndDate);
+    return passedDate.after(new Date());
+}
+
+function int getBalance(int monthlyPay, String contractEndDate) {
+    SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+    String currDate = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
+    Date passedDate = dateFormat.parse(contractEndDate);
+    return (int) (Math.ceil((double) ChronoUnit.DAYS.between(LocalDate.parse(currDate), LocalDate.parse(contractEndDate))/30) * monthlyPay);
+
+}
+
+rule "chkContract"
+    ruleflow-group "chkContract"
+    dialect "mvel"
+	when
+		cc: customer(customer.contract.endDate != null)
+	then
+        if( cc.ruleCheck == null ) {
+          cc.ruleCheck = new custRuleChkRes();    
+        }
+        cc.ruleCheck.setIsContractOver(chkContractEndDate(cc.contract.endDate));
+        System.out.println("In Chk Contract");
+    end
+
+
+
+rule "chkBalance"
+    ruleflow-group "chkBalance"
+    dialect "mvel"
+	when
+		cc: customer(customer.contract.endDate != null, customer.contract.monthlyPayment != null)
+	then
+        if( cc.ruleCheck == null ) {
+          cc.ruleCheck = new custRuleChkRes();    
+        }
+        cc.ruleCheck.setBalanceDue(getBalance(cc.contract.monthlyPayment, cc.contract.endDate));
+        System.out.println("In Chk Balance");
+    end
