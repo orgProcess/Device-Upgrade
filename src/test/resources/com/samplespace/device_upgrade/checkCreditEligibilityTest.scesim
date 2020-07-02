@@ -35,54 +35,48 @@
         <FactMapping>
           <expressionElements>
             <ExpressionElement>
-              <step>customer</step>
+              <step>contract</step>
             </ExpressionElement>
             <ExpressionElement>
-              <step>ruleCheck</step>
-            </ExpressionElement>
-            <ExpressionElement>
-              <step>reqType</step>
+              <step>type</step>
             </ExpressionElement>
           </expressionElements>
           <expressionIdentifier>
-            <name>1593666077091</name>
+            <name>1593666398190</name>
             <type>GIVEN</type>
           </expressionIdentifier>
           <factIdentifier>
-            <name>1593666077091</name>
-            <className>com.samplespace.device_upgrade.customer</className>
+            <name>1593666398190</name>
+            <className>com.samplespace.device_upgrade.contract</className>
           </factIdentifier>
           <className>java.lang.String</className>
-          <factAlias>customer</factAlias>
-          <expressionAlias>ruleCheck.reqType</expressionAlias>
+          <factAlias>contract</factAlias>
+          <expressionAlias>type</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>161.0</columnWidth>
+          <columnWidth>161.00000000000003</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
             <ExpressionElement>
-              <step>customer</step>
+              <step>custRuleChkRes</step>
             </ExpressionElement>
             <ExpressionElement>
-              <step>ruleCheck</step>
-            </ExpressionElement>
-            <ExpressionElement>
-              <step>initialPayment</step>
+              <step>balanceDue</step>
             </ExpressionElement>
           </expressionElements>
           <expressionIdentifier>
-            <name>1593666200897</name>
+            <name>1593666396518</name>
             <type>GIVEN</type>
           </expressionIdentifier>
           <factIdentifier>
-            <name>1593666077091</name>
-            <className>com.samplespace.device_upgrade.customer</className>
+            <name>1593665813418</name>
+            <className>com.samplespace.device_upgrade.custRuleChkRes</className>
           </factIdentifier>
           <className>java.lang.Integer</className>
-          <factAlias>customer</factAlias>
-          <expressionAlias>ruleCheck.initialPayment</expressionAlias>
+          <factAlias>custRuleChkRes</factAlias>
+          <expressionAlias>balanceDue</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>161.0</columnWidth>
+          <columnWidth>161.00000000000003</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -97,18 +91,18 @@
             </ExpressionElement>
           </expressionElements>
           <expressionIdentifier>
-            <name>1593666203713</name>
+            <name>1593666392624</name>
             <type>GIVEN</type>
           </expressionIdentifier>
           <factIdentifier>
-            <name>1593666077091</name>
+            <name>1593666392624</name>
             <className>com.samplespace.device_upgrade.customer</className>
           </factIdentifier>
           <className>java.lang.Integer</className>
           <factAlias>customer</factAlias>
           <expressionAlias>ruleCheck.creditScore</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>161.0</columnWidth>
+          <columnWidth>161.00000000000003</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -131,7 +125,7 @@
           <factAlias>custRuleChkRes</factAlias>
           <expressionAlias>isCreditOk</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>161.0</columnWidth>
+          <columnWidth>161.00000000000003</columnWidth>
         </FactMapping>
       </factMappings>
     </scesimModelDescriptor>
@@ -168,40 +162,40 @@
               <name>1|2</name>
               <type>EXPECT</type>
             </expressionIdentifier>
-            <rawValue class="string">true</rawValue>
+            <rawValue class="string">null</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
-              <name>1593666077091</name>
-              <className>com.samplespace.device_upgrade.customer</className>
+              <name>1593666398190</name>
+              <className>com.samplespace.device_upgrade.contract</className>
             </factIdentifier>
             <expressionIdentifier>
-              <name>1593666077091</name>
+              <name>1593666398190</name>
               <type>GIVEN</type>
             </expressionIdentifier>
             <rawValue class="string">Device</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
-              <name>1593666077091</name>
-              <className>com.samplespace.device_upgrade.customer</className>
+              <name>1593665813418</name>
+              <className>com.samplespace.device_upgrade.custRuleChkRes</className>
             </factIdentifier>
             <expressionIdentifier>
-              <name>1593666200897</name>
+              <name>1593666396518</name>
               <type>GIVEN</type>
             </expressionIdentifier>
             <rawValue class="string">100</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
-              <name>1593666077091</name>
+              <name>1593666392624</name>
               <className>com.samplespace.device_upgrade.customer</className>
             </factIdentifier>
             <expressionIdentifier>
-              <name>1593666203713</name>
+              <name>1593666392624</name>
               <type>GIVEN</type>
             </expressionIdentifier>
-            <rawValue class="string">351</rawValue>
+            <rawValue class="string">350</rawValue>
           </FactMappingValue>
         </factMappingValues>
       </Scenario>
