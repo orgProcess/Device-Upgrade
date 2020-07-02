@@ -32,7 +32,7 @@ rule "chkContract"
           cc.ruleCheck = new custRuleChkRes();    
         }
         cc.ruleCheck.setIsContractOver(chkContractEndDate(cc.contract.endDate));
-        System.out.println("Product Spec is:: Service.TV_SAT");
+        System.out.println(cc.contract.endDate);
     end
     
 rule "chkBalance"
