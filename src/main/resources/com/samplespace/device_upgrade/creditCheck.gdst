@@ -12,12 +12,12 @@
   <attributeCols>
     <attribute-column52>
       <typedDefaultValue>
-        <valueString>creditCheck</valueString>
+        <valueString>valCredScore</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </typedDefaultValue>
-      <hideColumn>true</hideColumn>
-      <width>100</width>
+      <hideColumn>false</hideColumn>
+      <width>186</width>
       <attribute>ruleflow-group</attribute>
       <reverseOrder>false</reverseOrder>
       <useRowNumber>false</useRowNumber>
@@ -159,7 +159,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>creditCheck</valueString>
+        <valueString>valCredScore</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -203,7 +203,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>creditCheck</valueString>
+        <valueString>valCredScore</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -247,7 +247,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>creditCheck</valueString>
+        <valueString>valCredScore</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -291,7 +291,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>creditCheck</valueString>
+        <valueString>valCredScore</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -335,7 +335,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>creditCheck</valueString>
+        <valueString>valCredScore</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -379,7 +379,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>creditCheck</valueString>
+        <valueString>valCredScore</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -423,7 +423,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>creditCheck</valueString>
+        <valueString>valCredScore</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -467,7 +467,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>creditCheck</valueString>
+        <valueString>valCredScore</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -511,7 +511,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>creditCheck</valueString>
+        <valueString>valCredScore</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -555,7 +555,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>creditCheck</valueString>
+        <valueString>valCredScore</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -599,7 +599,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>creditCheck</valueString>
+        <valueString>valCredScore</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -643,7 +643,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>creditCheck</valueString>
+        <valueString>valCredScore</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -687,7 +687,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>creditCheck</valueString>
+        <valueString>valCredScore</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -731,7 +731,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>creditCheck</valueString>
+        <valueString>valCredScore</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
