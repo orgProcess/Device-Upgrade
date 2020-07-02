@@ -56,7 +56,33 @@
           <factAlias>customer</factAlias>
           <expressionAlias>contract.endDate</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>540.5</columnWidth>
+          <columnWidth>209.66666666666666</columnWidth>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements>
+            <ExpressionElement>
+              <step>customer</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>contract</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>monthlyPayment</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1593710671546</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>1|1</name>
+            <className>com.samplespace.device_upgrade.customer</className>
+          </factIdentifier>
+          <className>java.lang.Integer</className>
+          <factAlias>customer</factAlias>
+          <expressionAlias>contract.monthlyPayment</expressionAlias>
+          <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
+          <columnWidth>209.66666666666666</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -67,7 +93,7 @@
               <step>ruleCheck</step>
             </ExpressionElement>
             <ExpressionElement>
-              <step>isContractOver</step>
+              <step>balanceDue</step>
             </ExpressionElement>
           </expressionElements>
           <expressionIdentifier>
@@ -78,11 +104,11 @@
             <name>1|1</name>
             <className>com.samplespace.device_upgrade.customer</className>
           </factIdentifier>
-          <className>java.lang.Boolean</className>
+          <className>java.lang.Integer</className>
           <factAlias>customer</factAlias>
-          <expressionAlias>ruleCheck.isContractOver</expressionAlias>
+          <expressionAlias>ruleCheck.balanceDue</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>540.5</columnWidth>
+          <columnWidth>209.66666666666666</columnWidth>
         </FactMapping>
       </factMappings>
     </scesimModelDescriptor>
@@ -127,10 +153,20 @@
               <className>com.samplespace.device_upgrade.customer</className>
             </factIdentifier>
             <expressionIdentifier>
+              <name>1593710671546</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">20</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>1|1</name>
+              <className>com.samplespace.device_upgrade.customer</className>
+            </factIdentifier>
+            <expressionIdentifier>
               <name>1|2</name>
               <type>EXPECT</type>
             </expressionIdentifier>
-            <rawValue class="string">true</rawValue>
           </FactMappingValue>
         </factMappingValues>
       </Scenario>
@@ -176,7 +212,7 @@
   </background>
   <settings>
     <type>RULE</type>
-    <ruleFlowGroup>chkContract</ruleFlowGroup>
+    <ruleFlowGroup>chkBalance</ruleFlowGroup>
     <skipFromBuild>false</skipFromBuild>
     <stateless>false</stateless>
   </settings>
