@@ -81,29 +81,6 @@
         <FactMapping>
           <expressionElements>
             <ExpressionElement>
-              <step>customer</step>
-            </ExpressionElement>
-            <ExpressionElement>
-              <step>creditScore</step>
-            </ExpressionElement>
-          </expressionElements>
-          <expressionIdentifier>
-            <name>1593667359427</name>
-            <type>GIVEN</type>
-          </expressionIdentifier>
-          <factIdentifier>
-            <name>1|2</name>
-            <className>com.samplespace.device_upgrade.customer</className>
-          </factIdentifier>
-          <className>java.lang.Integer</className>
-          <factAlias>customer</factAlias>
-          <expressionAlias>creditScore</expressionAlias>
-          <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>274.0</columnWidth>
-        </FactMapping>
-        <FactMapping>
-          <expressionElements>
-            <ExpressionElement>
               <step>custRuleChkRes</step>
             </ExpressionElement>
             <ExpressionElement>
@@ -171,17 +148,6 @@
               <type>GIVEN</type>
             </expressionIdentifier>
             <rawValue class="string">20</rawValue>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier>
-              <name>1|2</name>
-              <className>com.samplespace.device_upgrade.customer</className>
-            </factIdentifier>
-            <expressionIdentifier>
-              <name>1593667359427</name>
-              <type>GIVEN</type>
-            </expressionIdentifier>
-            <rawValue class="string">555</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
