@@ -28,8 +28,8 @@ public class customer implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Credit Score")
 	private java.lang.Integer creditScore;
 
-	@org.kie.api.definition.type.Label("Contract")
-	private contract contract;
+	@org.kie.api.definition.type.Label(value = "Contract")
+	private java.util.List<com.samplespace.device_upgrade.contract> contract;
 
 	public customer() {
 	}
@@ -100,11 +100,12 @@ public class customer implements java.io.Serializable {
 		this.creditScore = creditScore;
 	}
 
-	public com.samplespace.device_upgrade.contract getContract() {
+	public java.util.List<com.samplespace.device_upgrade.contract> getContract() {
 		return this.contract;
 	}
 
-	public void setContract(com.samplespace.device_upgrade.contract contract) {
+	public void setContract(
+			java.util.List<com.samplespace.device_upgrade.contract> contract) {
 		this.contract = contract;
 	}
 
@@ -113,7 +114,7 @@ public class customer implements java.io.Serializable {
 			java.util.List<com.samplespace.device_upgrade.address> address,
 			com.samplespace.device_upgrade.custRuleChkRes ruleCheck,
 			java.lang.Integer creditScore,
-			com.samplespace.device_upgrade.contract contract) {
+			java.util.List<com.samplespace.device_upgrade.contract> contract) {
 		this.customerId = customerId;
 		this.name = name;
 		this.dob = dob;
