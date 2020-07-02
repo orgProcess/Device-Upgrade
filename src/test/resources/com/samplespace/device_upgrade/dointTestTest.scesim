@@ -130,7 +130,6 @@
               <name>1|2</name>
               <type>EXPECT</type>
             </expressionIdentifier>
-            <rawValue class="string">true</rawValue>
           </FactMappingValue>
         </factMappingValues>
       </Scenario>
@@ -181,6 +180,10 @@
     <stateless>false</stateless>
   </settings>
   <imports>
-    <imports/>
+    <imports>
+      <Import>
+        <type>java.lang.Boolean</type>
+      </Import>
+    </imports>
   </imports>
 </ScenarioSimulationModel>
