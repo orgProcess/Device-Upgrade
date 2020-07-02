@@ -59,28 +59,18 @@
           <columnWidth>314.5</columnWidth>
         </FactMapping>
         <FactMapping>
-          <expressionElements>
-            <ExpressionElement>
-              <step>customer</step>
-            </ExpressionElement>
-            <ExpressionElement>
-              <step>ruleCheck</step>
-            </ExpressionElement>
-            <ExpressionElement>
-              <step>isContractOver</step>
-            </ExpressionElement>
-          </expressionElements>
+          <expressionElements/>
           <expressionIdentifier>
-            <name>1|2</name>
+            <name>1593711056628</name>
             <type>EXPECT</type>
           </expressionIdentifier>
           <factIdentifier>
-            <name>1|1</name>
-            <className>com.samplespace.device_upgrade.customer</className>
+            <name>Empty</name>
+            <className>java.lang.Void</className>
           </factIdentifier>
-          <className>java.lang.Boolean</className>
-          <factAlias>customer</factAlias>
-          <expressionAlias>ruleCheck.isContractOver</expressionAlias>
+          <className>java.lang.Void</className>
+          <factAlias>INSTANCE 4</factAlias>
+          <expressionAlias>PROPERTY 4</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
           <columnWidth>314.5</columnWidth>
         </FactMapping>
@@ -123,11 +113,11 @@
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
-              <name>1|1</name>
-              <className>com.samplespace.device_upgrade.customer</className>
+              <name>Empty</name>
+              <className>java.lang.Void</className>
             </factIdentifier>
             <expressionIdentifier>
-              <name>1|2</name>
+              <name>1593711056628</name>
               <type>EXPECT</type>
             </expressionIdentifier>
           </FactMappingValue>
