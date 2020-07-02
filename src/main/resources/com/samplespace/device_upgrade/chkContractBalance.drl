@@ -11,7 +11,7 @@ import java.time.LocalDate;
 function boolean chkContractEndDate(String contractEndDate) {
     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
     Date passedDate = dateFormat.parse(contractEndDate);
-    return passedDate.after(new Date());
+    return !passedDate.after(new Date());
 }
 
 function int getBalance(int monthlyPay, String contractEndDate) {
