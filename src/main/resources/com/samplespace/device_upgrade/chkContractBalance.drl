@@ -11,7 +11,7 @@ import java.time.LocalDate;
 function boolean chkContractEndDate(String contractEndDate) {
     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
     Date passedDate = dateFormat.parse(contractEndDate);
-
+    
     return passedDate.after(new Date());
 }
 
@@ -33,7 +33,7 @@ rule "chkContract"
           cc.ruleCheck = new custRuleChkRes();    
         }
         cc.ruleCheck.setIsContractOver(chkContractEndDate(cc.contract.endDate));
-        
+        System.out.println(cc.contract.endDate);
     end
     
 rule "chkBalance"
