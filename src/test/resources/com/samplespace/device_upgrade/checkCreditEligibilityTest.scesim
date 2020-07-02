@@ -53,53 +53,30 @@
           <factAlias>contract</factAlias>
           <expressionAlias>type</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>161.00000000000003</columnWidth>
+          <columnWidth>161.0</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
             <ExpressionElement>
-              <step>contract</step>
+              <step>custRuleChkRes</step>
             </ExpressionElement>
             <ExpressionElement>
               <step>balanceDue</step>
             </ExpressionElement>
           </expressionElements>
           <expressionIdentifier>
-            <name>1593667171592</name>
+            <name>1593667337010</name>
             <type>GIVEN</type>
           </expressionIdentifier>
           <factIdentifier>
-            <name>1|1</name>
-            <className>com.samplespace.device_upgrade.contract</className>
+            <name>1593667337010</name>
+            <className>com.samplespace.device_upgrade.custRuleChkRes</className>
           </factIdentifier>
           <className>java.lang.Integer</className>
-          <factAlias>contract</factAlias>
+          <factAlias>custRuleChkRes</factAlias>
           <expressionAlias>balanceDue</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>161.00000000000003</columnWidth>
-        </FactMapping>
-        <FactMapping>
-          <expressionElements>
-            <ExpressionElement>
-              <step>contract</step>
-            </ExpressionElement>
-            <ExpressionElement>
-              <step>monthlyPayment</step>
-            </ExpressionElement>
-          </expressionElements>
-          <expressionIdentifier>
-            <name>1593667174035</name>
-            <type>GIVEN</type>
-          </expressionIdentifier>
-          <factIdentifier>
-            <name>1|1</name>
-            <className>com.samplespace.device_upgrade.contract</className>
-          </factIdentifier>
-          <className>java.lang.Integer</className>
-          <factAlias>contract</factAlias>
-          <expressionAlias>monthlyPayment</expressionAlias>
-          <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>161.00000000000003</columnWidth>
+          <columnWidth>161.0</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -107,25 +84,45 @@
               <step>customer</step>
             </ExpressionElement>
             <ExpressionElement>
-              <step>ruleCheck</step>
+              <step>creditScore</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1593667359427</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>1|2</name>
+            <className>com.samplespace.device_upgrade.customer</className>
+          </factIdentifier>
+          <className>java.lang.Integer</className>
+          <factAlias>customer</factAlias>
+          <expressionAlias>creditScore</expressionAlias>
+          <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
+          <columnWidth>161.0</columnWidth>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements>
+            <ExpressionElement>
+              <step>custRuleChkRes</step>
             </ExpressionElement>
             <ExpressionElement>
               <step>isCreditOk</step>
             </ExpressionElement>
           </expressionElements>
           <expressionIdentifier>
-            <name>1|2</name>
+            <name>1593667479810</name>
             <type>EXPECT</type>
           </expressionIdentifier>
           <factIdentifier>
-            <name>1|2</name>
-            <className>com.samplespace.device_upgrade.customer</className>
+            <name>1593667337010</name>
+            <className>com.samplespace.device_upgrade.custRuleChkRes</className>
           </factIdentifier>
           <className>java.lang.Boolean</className>
-          <factAlias>customer</factAlias>
-          <expressionAlias>ruleCheck.isCreditOk</expressionAlias>
+          <factAlias>custRuleChkRes</factAlias>
+          <expressionAlias>isCreditOk</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>161.00000000000003</columnWidth>
+          <columnWidth>161.0</columnWidth>
         </FactMapping>
       </factMappings>
     </scesimModelDescriptor>
@@ -166,25 +163,14 @@
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
-              <name>1|1</name>
-              <className>com.samplespace.device_upgrade.contract</className>
+              <name>1593667337010</name>
+              <className>com.samplespace.device_upgrade.custRuleChkRes</className>
             </factIdentifier>
             <expressionIdentifier>
-              <name>1593667171592</name>
+              <name>1593667337010</name>
               <type>GIVEN</type>
             </expressionIdentifier>
             <rawValue class="string">100</rawValue>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier>
-              <name>1|1</name>
-              <className>com.samplespace.device_upgrade.contract</className>
-            </factIdentifier>
-            <expressionIdentifier>
-              <name>1593667174035</name>
-              <type>GIVEN</type>
-            </expressionIdentifier>
-            <rawValue class="string">350</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
@@ -192,7 +178,18 @@
               <className>com.samplespace.device_upgrade.customer</className>
             </factIdentifier>
             <expressionIdentifier>
-              <name>1|2</name>
+              <name>1593667359427</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">350</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>1593667337010</name>
+              <className>com.samplespace.device_upgrade.custRuleChkRes</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1593667479810</name>
               <type>EXPECT</type>
             </expressionIdentifier>
             <rawValue class="string">true</rawValue>
