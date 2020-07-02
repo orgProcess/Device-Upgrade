@@ -159,7 +159,7 @@
               <name>1|1</name>
               <type>GIVEN</type>
             </expressionIdentifier>
-            <rawValue class="string">Device</rawValue>
+            <rawValue class="string">Plan</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
@@ -170,7 +170,7 @@
               <name>1593667337010</name>
               <type>GIVEN</type>
             </expressionIdentifier>
-            <rawValue class="string">100</rawValue>
+            <rawValue class="string">20</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
@@ -181,7 +181,7 @@
               <name>1593667359427</name>
               <type>GIVEN</type>
             </expressionIdentifier>
-            <rawValue class="string">350</rawValue>
+            <rawValue class="string">555</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
