@@ -119,7 +119,7 @@
               <name>1|1</name>
               <type>GIVEN</type>
             </expressionIdentifier>
-            <rawValue class="string">2020-09-01</rawValue>
+            <rawValue class="string">2020-05-01</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
