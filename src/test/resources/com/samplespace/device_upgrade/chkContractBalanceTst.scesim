@@ -61,23 +61,26 @@
         <FactMapping>
           <expressionElements>
             <ExpressionElement>
-              <step>custRuleChkRes</step>
+              <step>customer</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>ruleCheck</step>
             </ExpressionElement>
             <ExpressionElement>
               <step>isContractOver</step>
             </ExpressionElement>
           </expressionElements>
           <expressionIdentifier>
-            <name>1593708383713</name>
+            <name>1593708446795</name>
             <type>EXPECT</type>
           </expressionIdentifier>
           <factIdentifier>
-            <name>1593708383713</name>
-            <className>com.samplespace.device_upgrade.custRuleChkRes</className>
+            <name>1|2</name>
+            <className>com.samplespace.device_upgrade.customer</className>
           </factIdentifier>
           <className>java.lang.Boolean</className>
-          <factAlias>custRuleChkRes</factAlias>
-          <expressionAlias>isContractOver</expressionAlias>
+          <factAlias>customer</factAlias>
+          <expressionAlias>ruleCheck.isContractOver</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
           <columnWidth>314.5</columnWidth>
         </FactMapping>
@@ -120,13 +123,14 @@
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
-              <name>1593708383713</name>
-              <className>com.samplespace.device_upgrade.custRuleChkRes</className>
+              <name>1|2</name>
+              <className>com.samplespace.device_upgrade.customer</className>
             </factIdentifier>
             <expressionIdentifier>
-              <name>1593708383713</name>
+              <name>1593708446795</name>
               <type>EXPECT</type>
             </expressionIdentifier>
+            <rawValue class="string">true</rawValue>
           </FactMappingValue>
         </factMappingValues>
       </Scenario>
