@@ -22,14 +22,14 @@ public class customer implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Address")
 	private java.util.List<com.samplespace.device_upgrade.address> address;
 
-	@org.kie.api.definition.type.Label("Contract")
-	private com.samplespace.device_upgrade.contract contract;
-
 	@org.kie.api.definition.type.Label("Customer Rule Check Result")
 	private com.samplespace.device_upgrade.custRuleChkRes ruleCheck;
 
-	@org.kie.api.definition.type.Label(value = "Credit Score")
+	@org.kie.api.definition.type.Label("Credit Score")
 	private java.lang.Integer creditScore;
+
+	@org.kie.api.definition.type.Label(value = "Contract")
+	private java.util.List<com.samplespace.device_upgrade.contract> contract;
 
 	public customer() {
 	}
@@ -83,14 +83,6 @@ public class customer implements java.io.Serializable {
 		this.address = address;
 	}
 
-	public com.samplespace.device_upgrade.contract getContract() {
-		return this.contract;
-	}
-
-	public void setContract(com.samplespace.device_upgrade.contract contract) {
-		this.contract = contract;
-	}
-
 	public com.samplespace.device_upgrade.custRuleChkRes getRuleCheck() {
 		return this.ruleCheck;
 	}
@@ -108,21 +100,30 @@ public class customer implements java.io.Serializable {
 		this.creditScore = creditScore;
 	}
 
+	public java.util.List<com.samplespace.device_upgrade.contract> getContract() {
+		return this.contract;
+	}
+
+	public void setContract(
+			java.util.List<com.samplespace.device_upgrade.contract> contract) {
+		this.contract = contract;
+	}
+
 	public customer(java.lang.String customerId, java.lang.String name,
 			java.util.Date dob, java.lang.String phone, java.lang.String email,
 			java.util.List<com.samplespace.device_upgrade.address> address,
-			com.samplespace.device_upgrade.contract contract,
 			com.samplespace.device_upgrade.custRuleChkRes ruleCheck,
-			java.lang.Integer creditScore) {
+			java.lang.Integer creditScore,
+			java.util.List<com.samplespace.device_upgrade.contract> contract) {
 		this.customerId = customerId;
 		this.name = name;
 		this.dob = dob;
 		this.phone = phone;
 		this.email = email;
 		this.address = address;
-		this.contract = contract;
 		this.ruleCheck = ruleCheck;
 		this.creditScore = creditScore;
+		this.contract = contract;
 	}
 
 }
