@@ -47,6 +47,7 @@ rule "chkBalance"
         //  cc.ruleCheck = new custRuleChkRes();    
         //}
         //cc.ruleCheck.setBalanceDue(getBalance(cc.contract.monthlyPayment, cc.contract.endDate));
+        System.out.println("In Chk Bal");
     end
         
     
