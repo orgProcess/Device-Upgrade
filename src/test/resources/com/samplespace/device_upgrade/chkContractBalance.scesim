@@ -56,7 +56,7 @@
           <factAlias>customer</factAlias>
           <expressionAlias>contract.endDate</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>540.5</columnWidth>
+          <columnWidth>314.5</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -82,7 +82,7 @@
           <factAlias>customer</factAlias>
           <expressionAlias>ruleCheck.isContractOver</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>540.5</columnWidth>
+          <columnWidth>314.5</columnWidth>
         </FactMapping>
       </factMappings>
     </scesimModelDescriptor>
