@@ -15,14 +15,17 @@ public class custRuleChkRes implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Is Credit Ok")
 	private java.lang.Boolean isCreditOk;
 
-	@org.kie.api.definition.type.Label(value = "Request Type")
+	@org.kie.api.definition.type.Label("Request Type")
 	private java.lang.String reqType;
 
-	@org.kie.api.definition.type.Label(value = "Initial Payment")
+	@org.kie.api.definition.type.Label("Initial Payment")
 	private java.lang.Integer initialPayment;
 
-	@org.kie.api.definition.type.Label(value = "Credit Score")
+	@org.kie.api.definition.type.Label("Credit Score")
 	private java.lang.Integer creditScore;
+
+	@org.kie.api.definition.type.Label(value = "nf")
+	private java.lang.String nf;
 
 	public custRuleChkRes() {
 	}
@@ -75,16 +78,25 @@ public class custRuleChkRes implements java.io.Serializable {
 		this.creditScore = creditScore;
 	}
 
+	public java.lang.String getNf() {
+		return this.nf;
+	}
+
+	public void setNf(java.lang.String nf) {
+		this.nf = nf;
+	}
+
 	public custRuleChkRes(java.lang.Boolean isContractOver,
 			java.lang.Integer balanceDue, java.lang.Boolean isCreditOk,
 			java.lang.String reqType, java.lang.Integer initialPayment,
-			java.lang.Integer creditScore) {
+			java.lang.Integer creditScore, java.lang.String nf) {
 		this.isContractOver = isContractOver;
 		this.balanceDue = balanceDue;
 		this.isCreditOk = isCreditOk;
 		this.reqType = reqType;
 		this.initialPayment = initialPayment;
 		this.creditScore = creditScore;
+		this.nf = nf;
 	}
 
 }
