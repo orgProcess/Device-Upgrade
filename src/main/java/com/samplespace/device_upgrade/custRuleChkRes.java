@@ -24,9 +24,6 @@ public class custRuleChkRes implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Credit Score")
 	private java.lang.Integer creditScore;
 
-	@org.kie.api.definition.type.Label(value = "nf")
-	private java.lang.String nf;
-
 	public custRuleChkRes() {
 	}
 
@@ -78,25 +75,16 @@ public class custRuleChkRes implements java.io.Serializable {
 		this.creditScore = creditScore;
 	}
 
-	public java.lang.String getNf() {
-		return this.nf;
-	}
-
-	public void setNf(java.lang.String nf) {
-		this.nf = nf;
-	}
-
 	public custRuleChkRes(java.lang.Boolean isContractOver,
 			java.lang.Integer balanceDue, java.lang.Boolean isCreditOk,
 			java.lang.String reqType, java.lang.Integer initialPayment,
-			java.lang.Integer creditScore, java.lang.String nf) {
+			java.lang.Integer creditScore) {
 		this.isContractOver = isContractOver;
 		this.balanceDue = balanceDue;
 		this.isCreditOk = isCreditOk;
 		this.reqType = reqType;
 		this.initialPayment = initialPayment;
 		this.creditScore = creditScore;
-		this.nf = nf;
 	}
 
 }
