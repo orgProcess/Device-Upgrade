@@ -61,26 +61,23 @@
         <FactMapping>
           <expressionElements>
             <ExpressionElement>
-              <step>customer</step>
-            </ExpressionElement>
-            <ExpressionElement>
-              <step>ruleCheck</step>
+              <step>custRuleChkRes</step>
             </ExpressionElement>
             <ExpressionElement>
               <step>isContractOver</step>
             </ExpressionElement>
           </expressionElements>
           <expressionIdentifier>
-            <name>1|2</name>
+            <name>1593708383713</name>
             <type>EXPECT</type>
           </expressionIdentifier>
           <factIdentifier>
-            <name>1|2</name>
-            <className>com.samplespace.device_upgrade.customer</className>
+            <name>1593708383713</name>
+            <className>com.samplespace.device_upgrade.custRuleChkRes</className>
           </factIdentifier>
           <className>java.lang.Boolean</className>
-          <factAlias>customer</factAlias>
-          <expressionAlias>ruleCheck.isContractOver</expressionAlias>
+          <factAlias>custRuleChkRes</factAlias>
+          <expressionAlias>isContractOver</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
           <columnWidth>314.5</columnWidth>
         </FactMapping>
@@ -116,21 +113,20 @@
               <className>com.samplespace.device_upgrade.customer</className>
             </factIdentifier>
             <expressionIdentifier>
-              <name>1|2</name>
-              <type>EXPECT</type>
-            </expressionIdentifier>
-            <rawValue class="string">false</rawValue>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier>
-              <name>1|2</name>
-              <className>com.samplespace.device_upgrade.customer</className>
-            </factIdentifier>
-            <expressionIdentifier>
               <name>1|1</name>
               <type>GIVEN</type>
             </expressionIdentifier>
             <rawValue class="string">2019-06-30</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>1593708383713</name>
+              <className>com.samplespace.device_upgrade.custRuleChkRes</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1593708383713</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
           </FactMappingValue>
         </factMappingValues>
       </Scenario>
