@@ -53,7 +53,7 @@
           <factAlias>contract</factAlias>
           <expressionAlias>type</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>161.00000000000003</columnWidth>
+          <columnWidth>274.0</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -76,7 +76,7 @@
           <factAlias>custRuleChkRes</factAlias>
           <expressionAlias>balanceDue</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>161.00000000000003</columnWidth>
+          <columnWidth>274.0</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -102,7 +102,7 @@
           <factAlias>customer</factAlias>
           <expressionAlias>ruleCheck.creditScore</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>161.00000000000003</columnWidth>
+          <columnWidth>274.0</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -125,7 +125,7 @@
           <factAlias>custRuleChkRes</factAlias>
           <expressionAlias>isCreditOk</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>161.00000000000003</columnWidth>
+          <columnWidth>274.0</columnWidth>
         </FactMapping>
       </factMappings>
     </scesimModelDescriptor>
@@ -195,6 +195,7 @@
               <name>1|2</name>
               <type>EXPECT</type>
             </expressionIdentifier>
+            <rawValue class="string">true</rawValue>
           </FactMappingValue>
         </factMappingValues>
       </Scenario>
