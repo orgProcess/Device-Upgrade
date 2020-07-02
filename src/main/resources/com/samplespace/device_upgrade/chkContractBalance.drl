@@ -1,7 +1,7 @@
 package com.samplespace.device_upgrade;
 
 import com.samplespace.device_upgrade.customer;
-import com.samplespace.device_upgrade.custRuleChkRes;
+
 
 import java.util.Date;
 import java.text.SimpleDateFormat;
