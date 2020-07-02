@@ -30,7 +30,7 @@ rule "chkContract"
 		cc: customer(customer.contract.endDate != null)
 	then
         //if( cc.ruleCheck == null ) {
-          cc.ruleCheck = new custRuleChkRes();    
+          cc.ruleCheck = new com.samplespace.device_upgrade.custRuleChkRes();    
         //}
         cc.ruleCheck.setIsContractOver(chkContractEndDate(cc.contract.endDate));
         System.out.println(cc.contract.endDate);
