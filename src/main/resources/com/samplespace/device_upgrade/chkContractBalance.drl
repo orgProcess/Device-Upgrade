@@ -28,9 +28,9 @@ rule "chkContract"
 	when
 		cc: customer(customer.contract.endDate != null)
 	then
-        //if( cc.ruleCheck == null ) {
+        if( cc.ruleCheck == null ) {
           cc.ruleCheck = new custRuleChkRes();    
-       // }
+        }
         cc.ruleCheck.setIsContractOver(chkContractEndDate(cc.contract.endDate));
         System.out.println("Product Spec is:: Service.TV_SAT");
     end
