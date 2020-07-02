@@ -26,7 +26,7 @@ rule "chkContract"
     ruleflow-group "chkContract"
     dialect "mvel"
 	when
-		cc: customer(customer.contract.endDate != null)
+		cc: customer(customer.contract.endDate != "")
 	then
         if( cc.ruleCheck == null ) {
           cc.ruleCheck = new custRuleChkRes();    
