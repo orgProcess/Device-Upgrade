@@ -28,11 +28,11 @@ rule "chkContract"
 	when
 		cc: customer(customer.contract.endDate != "")
 	then
-        if( cc.ruleCheck == null ) {
+        /*if( cc.ruleCheck == null ) {
           cc.ruleCheck = new custRuleChkRes();    
         }
         cc.ruleCheck.setIsContractOver(chkContractEndDate(cc.contract.endDate));
-        System.out.println(cc.contract.endDate);
+        System.out.println(cc.contract.endDate);*/
     end
 
 
@@ -43,10 +43,10 @@ rule "chkBalance"
 	when
 		cc: customer(customer.contract.endDate != null, customer.contract.monthlyPayment != null)
 	then
-        if( cc.ruleCheck == null ) {
-          cc.ruleCheck = new custRuleChkRes();    
-        }
-        cc.ruleCheck.setBalanceDue(getBalance(cc.contract.monthlyPayment, cc.contract.endDate));
+        //if( cc.ruleCheck == null ) {
+        //  cc.ruleCheck = new custRuleChkRes();    
+        //}
+        //cc.ruleCheck.setBalanceDue(getBalance(cc.contract.monthlyPayment, cc.contract.endDate));
     end
         
     
