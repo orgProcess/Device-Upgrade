@@ -53,7 +53,7 @@
           <factAlias>custRuleChkRes</factAlias>
           <expressionAlias>reqType</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>157.25</columnWidth>
+          <columnWidth>158.0</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -76,7 +76,7 @@
           <factAlias>custRuleChkRes</factAlias>
           <expressionAlias>initialPayment</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>157.25</columnWidth>
+          <columnWidth>158.0</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -99,7 +99,7 @@
           <factAlias>custRuleChkRes</factAlias>
           <expressionAlias>creditScore</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>157.25</columnWidth>
+          <columnWidth>158.0</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -122,7 +122,7 @@
           <factAlias>custRuleChkRes</factAlias>
           <expressionAlias>isCreditOk</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>157.25</columnWidth>
+          <columnWidth>158.0</columnWidth>
         </FactMapping>
       </factMappings>
     </scesimModelDescriptor>
@@ -181,7 +181,7 @@
               <name>1|2</name>
               <type>EXPECT</type>
             </expressionIdentifier>
-            <rawValue class="string">true</rawValue>
+            <rawValue class="string">null</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
@@ -239,7 +239,7 @@
               <name>1|2</name>
               <type>EXPECT</type>
             </expressionIdentifier>
-            <rawValue class="string">true</rawValue>
+            <rawValue class="string">null</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
